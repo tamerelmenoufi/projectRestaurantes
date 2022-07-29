@@ -13,7 +13,7 @@
                                         local = '{$_POST['local']}',
                                         restaurante = '{$_POST['restaurante']}',
                                         endereco = '{$_POST['endereco']}',
-                                        data = '{$_POST['data']}',
+                                        data = '{$_POST['data']}'
     ";
     if(mysqli_query($con, $query)){
         $retotno = [

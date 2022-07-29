@@ -9,7 +9,7 @@
                                         restaurante = '{$_POST['restaurante']}',
                                         usuario = '{$_POST['usuario']}',
                                         voto = '{$_POST['voto']}',
-                                        data = '{$_POST['data']}',
+                                        data = '{$_POST['data']}'
     ";
     if(mysqli_query($con, $query)){
         $retotno = [
