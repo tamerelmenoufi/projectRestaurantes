@@ -56,6 +56,7 @@
                 <tr>
                   <th scope="col">CPF</th>
                   <th scope="col">Local</th>
+                  <th scope="col">Data</th>
                   <th scope="col">Voto</th>
                 </tr>
               </thead>
@@ -68,6 +69,7 @@
                 <tr>
                   <td><?=$d->cpf?></td>
                   <td><?=$d->local?></td>
+                  <td><?=$d->data?></td>
                   <td>
                     <i class="fa-regular fa-face-frown" style="color:<?=(($d->voto == 'Ruim')?'red':'#ccc')?>"></i>
                     <i class="fa-regular fa-face-meh" style="color:<?=(($d->voto == 'Bom')?'orange':'#ccc')?>"></i>
