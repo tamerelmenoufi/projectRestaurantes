@@ -62,7 +62,7 @@
               </thead>
               <tbody>
                 <?php
-                  $query = "select * from clientes order by codigo desc";
+                  $query = "select * from votos order by codigo desc";
                   $result = mysqli_query($con, $query);
                   while($d = mysqli_fetch_object($result)){
                 ?>
