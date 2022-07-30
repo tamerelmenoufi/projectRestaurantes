@@ -5,7 +5,7 @@
     $_POST = json_decode(file_get_contents('php://input'), true);
 
 
-    $query = "REPLACE INTO usuarios set
+    $query = "REPLACE INTO clientes set
                                         nome = '{$_POST['nome']}',
                                         cpf = '{$_POST['cpf']}',
                                         telefone = '{$_POST['telefone']}',

@@ -7,7 +7,7 @@
 
     $query = "REPLACE INTO votos set
                                         restaurante = '{$_POST['restaurante']}',
-                                        usuario = '{$_POST['usuario']}',
+                                        cliente = '{$_POST['usuario']}',
                                         voto = '{$_POST['voto']}',
                                         data = '{$_POST['data']}'
     ";
