@@ -55,20 +55,20 @@
               <thead>
                 <tr>
                   <th scope="col">CPF</th>
-                  <th scope="col">Local</th>
+                  <th scope="col">Restaurante</th>
                   <th scope="col">Data</th>
                   <th scope="col">Voto</th>
                 </tr>
               </thead>
               <tbody>
                 <?php
-                  $query = "select * from votos order by codigo desc";
+                  $query = "select a.*, concat(b.local,' - ',b.titulo) as restaurante from votos a left join restaurantes b on a.restaurante = b.codigo order by a.codigo desc";
                   $result = mysqli_query($con, $query);
                   while($d = mysqli_fetch_object($result)){
                 ?>
                 <tr>
-                  <td><?=$d->cpf?></td>
-                  <td><?=$d->local?></td>
+                  <td><?=$d->cliente?></td>
+                  <td><?=$d->restaurante?></td>
                   <td><?=$d->data?></td>
                   <td>
                     <i class="fa-regular fa-face-frown" style="color:<?=(($d->voto == 'Ruim')?'red':'#ccc')?>"></i>
