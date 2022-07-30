@@ -69,9 +69,9 @@
                   <td><?=$d->cpf?></td>
                   <td><?=$d->local?></td>
                   <td>
-                    <i class="fa-regular fa-face-frown"></i>
-                    <i class="fa-regular fa-face-meh"></i>
-                    <i class="fa-regular fa-face-smile"></i>
+                    <i class="fa-regular fa-face-frown" style="color:<?=(($d->voto == 'Ruim')?'red':'#ccc')?>"></i>
+                    <i class="fa-regular fa-face-meh" style="color:<?=(($d->voto == 'Bom')?'orange':'#ccc')?>"></i>
+                    <i class="fa-regular fa-face-smile" style="color:<?=(($d->voto == 'Excelente')?'green':'#ccc')?>"></i>
                   </td>
                 </tr>
                 <?php
