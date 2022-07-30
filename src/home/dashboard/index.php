@@ -70,7 +70,7 @@
                   <td><?=$d->local?></td>
                   <td>
                     <i class="fa-regular fa-face-frown"></i>
-                    <i class="fa-regular fa-face-expressionless"></i>
+                    <i class="fa-regular fa-face-meh"></i>
                     <i class="fa-regular fa-face-smile"></i>
                   </td>
                 </tr>
