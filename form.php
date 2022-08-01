@@ -2,10 +2,11 @@
     .form{
         position:relative;
         float:left;
-        width:50%;
+        width:calc(50% - 50px);
         border:solid 1px #ccc;
         font-family:'verdana';
         padding:15px;
+        margin:10px;
     }
     .formbg{
         position:absolute;
@@ -116,6 +117,11 @@
         opacity:0.2;
     }
 </style>
+
+<?php
+for($i=0;$i<4;$i++){
+?>
+
 <div class="form">
     <!-- <img src='img/prato_cheio.png' width="200" /> -->
     <div class="formbg"></div>
@@ -147,3 +153,7 @@
         </div>
     </div>
 </div>
+
+<?php
+}
+?>
