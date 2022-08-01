@@ -13,7 +13,7 @@
     .nome{
         position:relative;
         float:left;
-        width:100%;
+        width:calc(100% - 10px);
         border-bottom:1px #333 solid;
         padding:5px;
         margin-top:10px;
@@ -21,7 +21,7 @@
     .cpf{
         position:relative;
         float:left;
-        width:50%;
+        width:calc(50% - 10px);
         border-bottom:1px #333 solid;
         padding:5px;
         margin-top:10px;
@@ -29,7 +29,7 @@
     .telefone{
         position:relative;
         float:left;
-        width:50%;
+        width:calc(50% - 10px);
         border-bottom:1px #333 solid;
         padding:5px;
         margin-top:10px;
@@ -37,7 +37,7 @@
     .endereco:{
         position:relative;
         float:left;
-        width:100%;
+        width:calc(100% - 10px);
         border-bottom:1px #333 solid;
         padding:5px;
         margin-top:10px;
