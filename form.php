@@ -99,7 +99,6 @@
         left:50%;
         margin-left:-50%;
         opacity:0.2;
-        height:100%;
     }
 </style>
 <div class="form">
