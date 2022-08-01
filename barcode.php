@@ -30,11 +30,13 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
         position:relative;
         font-size:20px;
         color:#333;
+        font-weight:bold;
     }
     .cpf{
         position:relative;
         font-size:15px;
         color:#333;
+        font-weight:bold;
     }
     .validade{
         position:relative;
