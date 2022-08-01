@@ -6,6 +6,14 @@
         border:solid 1px #ccc;
         font-family:'verdana';
         padding:15px;
+    }
+    .formbg{
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        top:0;
+        z-index:0;
         background-image:url(img/prato_cheio.png);
         background-size:50%;
         background-position:center;
@@ -109,6 +117,7 @@
 </style>
 <div class="form">
     <!-- <img src='img/prato_cheio.png' width="200" /> -->
+    <div class="formbg"></div>
     <div class="titulo">FICHA DE CADASTRO - Prato Cheio</div>
     <div class="nome">
         <span>Nome Completo:</span>
