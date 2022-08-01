@@ -39,6 +39,8 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
         position:relative;
         font-size:10px;
         color:#a1a1a1;
+        text-align:center;
+        margin-top:20px;
     }
     img{
         /* margin-top:30px; */
