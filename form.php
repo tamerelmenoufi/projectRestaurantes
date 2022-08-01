@@ -97,7 +97,9 @@
         position:absolute;
         z-index: 0;
         left:50%;
+        margin-left:-25%;
         top:50%;
+        margin-top:-25%;
         opacity:0.2;
     }
 </style>
