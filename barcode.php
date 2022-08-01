@@ -5,7 +5,7 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
     .cracha{
         position:relative;
         width:300px;
-        height:500px;
+        height:auto;
         border:solid 1px #ccc;
         border-radius:7px;
         display:flex;
