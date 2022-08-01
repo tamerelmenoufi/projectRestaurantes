@@ -12,6 +12,7 @@
     }
     .nome{
         position:relative;
+        height:40px;
         float:left;
         width:calc(100% - 10px);
         border-bottom:1px #333 solid;
@@ -20,6 +21,7 @@
     }
     .cpf{
         position:relative;
+        height:40px;
         float:left;
         width:calc(50% - 10px);
         border-bottom:1px #333 solid;
@@ -28,6 +30,7 @@
     }
     .telefone{
         position:relative;
+        height:40px;
         float:left;
         width:calc(50% - 10px);
         border-bottom:1px #333 solid;
@@ -36,6 +39,7 @@
     }
     .endereco:{
         position:relative;
+        height:auto;
         float:left;
         width:calc(100% - 10px);
         border-bottom:1px #333 solid;
@@ -44,30 +48,35 @@
     }
     .endereco div[rua]{
         position:relative;
+        height:40px;
         float:left;
         width:100%;
         border-bottom:1px #333 solid;
     }
     .endereco div[casa]{
         position:relative;
+        height:40px;
         float:left;
         width:20%;
         border-bottom:1px #333 solid;
     }
     .endereco div[complemento]{
         position:relative;
+        height:40px;
         float:left;
         width:80%;
         border-bottom:1px #333 solid;
     }
     .endereco div[cep]{
         position:relative;
+        height:40px;
         float:left;
         width:30%;
         border-bottom:1px #333 solid;
     }
     .endereco div[municipio]{
         position:relative;
+        height:40px;
         float:left;
         width:70%;
         border-bottom:1px #333 solid;
