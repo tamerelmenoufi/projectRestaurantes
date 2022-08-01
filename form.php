@@ -9,6 +9,8 @@
     }
     .titulo{
         font-weight:bold;
+        text-align:center;
+        margin-bottom:10px;
     }
     .nome{
         position:relative;
