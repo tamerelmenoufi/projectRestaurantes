@@ -51,7 +51,7 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
 </style>
 <div class="cracha">
     <div class="apoio"></div>
-    <img src='img/prato_cheio.png' width="150" />
+    <img src='img/prato_cheio.png' width="200" />
     <div class="nome">TAMER MOHAMED ELMENOUFI</div>
     <img src='lib/vendor/barcode/?f=png&s=qr&d=<?=$comando?>' width="300" height="300" />
     <div class="cpf">601.109.702-25</div>
