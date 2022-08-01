@@ -74,9 +74,9 @@
     }
     span{
         font-size:10px;
-        color:#ddd;
+        color:#333;
         font-weight:bold;
-        margin-bottom:30px;
+        padding-bottom:30px;
     }
     img{
         position:absolute;
