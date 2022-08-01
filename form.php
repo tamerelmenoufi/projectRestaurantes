@@ -114,7 +114,6 @@
         <span>Telefone:</span>
     </div>
     <div class="endereco">
-        <span>Endereço:</span>
         <div rua>
             <span>Rua:</span>
         </div>
