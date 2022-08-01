@@ -55,5 +55,5 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
     <div class="nome">TAMER MOHAMED ELMENOUFI</div>
     <img src='lib/vendor/barcode/?f=png&s=qr&d=<?=$comando?>' width="300" height="300" />
     <div class="cpf">601.109.702-25</div>
-    <div class="validade">Válido em todos os restaurantes bom prato<br>Governo do Estado do Amazonas</div>
+    <div class="validade">Válido em todos os restaurantes Prato Cheio<br>Governo do Estado do Amazonas</div>
 </div>
