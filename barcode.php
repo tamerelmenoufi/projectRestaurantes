@@ -9,6 +9,7 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
         border:solid 1px #ccc;
         border-radius:7px;
         display:flex;
+        flex-direction:column;
         justify-items:center;
         align-content:center;
     }
