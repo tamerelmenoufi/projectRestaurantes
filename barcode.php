@@ -4,7 +4,7 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
 <style>
     .cracha{
         position:relative;
-        width:300px;
+        width:350px;
         height:auto;
         border:solid 1px #ccc;
         border-radius:7px;
@@ -12,6 +12,7 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
         flex-direction:column;
         justify-content:center;
         align-items:center;
+        font-family:'verdana'
     }
     .apoio{
         position:relative;
