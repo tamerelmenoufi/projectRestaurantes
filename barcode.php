@@ -10,8 +10,8 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
         border-radius:7px;
         display:flex;
         flex-direction:column;
-        justify-items:center;
-        align-content:center;
+        justify-content:center;
+        align-items:center;
     }
     .apoio{
         position:relative;
