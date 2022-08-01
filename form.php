@@ -2,7 +2,7 @@
     .form{
         position:relative;
         float:left;
-        width:calc(50% - 50px);
+        width:calc(50% - 52px);
         border:solid 1px #ccc;
         font-family:'verdana';
         padding:15px;
