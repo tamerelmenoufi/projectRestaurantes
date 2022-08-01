@@ -1,7 +1,5 @@
 <?php
-
 $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":"(92) 99188-6570","endereco":"Rua Monsenhor Coutinho, 600, Edifício Maximino Correia, Apto 1302, CEP 69010-110, Manaus,  Amazonas"}';
-
 ?>
 <style>
     .cracha{
@@ -49,5 +47,3 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
     <div class="cpf">601.109.702-25</div>
     <div class="validade">Válido em todos os restaurantes bom prato<br>Governo do Estado do Amazonas</div>
 </div>
-
-
