@@ -7,29 +7,40 @@
         font-family:'verdana';
         padding:15px;
     }
+    .titulo{
+        font-weight:bold;
+    }
     .nome{
         position:relative;
         float:left;
         width:100%;
         border-bottom:1px #333 solid;
+        padding:5px;
+        margin-top:10px;
     }
     .cpf{
         position:relative;
         float:left;
         width:50%;
         border-bottom:1px #333 solid;
+        padding:5px;
+        margin-top:10px;
     }
     .telefone{
         position:relative;
         float:left;
         width:50%;
         border-bottom:1px #333 solid;
+        padding:5px;
+        margin-top:10px;
     }
     .endereco:{
         position:relative;
         float:left;
         width:100%;
         border-bottom:1px #333 solid;
+        padding:5px;
+        margin-top:10px;
     }
     .endereco div[rua]{
         position:relative;
