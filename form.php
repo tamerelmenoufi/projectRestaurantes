@@ -17,7 +17,7 @@
         width:calc(100% - 10px);
         border-bottom:1px #333 solid;
         padding:5px;
-        margin-top:10px;
+        margin-top:5px;
     }
     .cpf{
         position:relative;
@@ -26,7 +26,7 @@
         width:calc(50% - 10px);
         border-bottom:1px #333 solid;
         padding:5px;
-        margin-top:10px;
+        margin-top:5px;
     }
     .telefone{
         position:relative;
@@ -35,7 +35,7 @@
         width:calc(50% - 10px);
         border-bottom:1px #333 solid;
         padding:5px;
-        margin-top:10px;
+        margin-top:5px;
     }
     .endereco:{
         position:relative;
@@ -44,7 +44,6 @@
         width:calc(100% - 10px);
         border-bottom:1px #333 solid;
         padding:5px;
-        margin-top:10px;
     }
     .endereco div[rua]{
         position:relative;
@@ -52,6 +51,7 @@
         float:left;
         width:100%;
         border-bottom:1px #333 solid;
+        margin-top:5px;
     }
     .endereco div[casa]{
         position:relative;
@@ -59,6 +59,7 @@
         float:left;
         width:20%;
         border-bottom:1px #333 solid;
+        margin-top:5px;
     }
     .endereco div[complemento]{
         position:relative;
@@ -66,6 +67,7 @@
         float:left;
         width:80%;
         border-bottom:1px #333 solid;
+        margin-top:5px;
     }
     .endereco div[cep]{
         position:relative;
@@ -73,6 +75,7 @@
         float:left;
         width:30%;
         border-bottom:1px #333 solid;
+        margin-top:5px;
     }
     .endereco div[municipio]{
         position:relative;
@@ -80,6 +83,7 @@
         float:left;
         width:70%;
         border-bottom:1px #333 solid;
+        margin-top:5px;
     }
     span{
         font-size:10px;
