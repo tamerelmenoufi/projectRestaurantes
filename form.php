@@ -72,6 +72,12 @@
         width:70%;
         border-bottom:1px #333 solid;
     }
+    span{
+        font-size:10px;
+        color:#ddd;
+        font-weight:bold;
+        margin-bottom:30px;
+    }
     img{
         position:absolute;
         z-index: 0;
