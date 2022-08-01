@@ -24,7 +24,8 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
         border-radius:20px;
     }
     .nome{
-        margin-top:20px;
+        margin-top:40px;
+        margin-bottom:40px;
         position:relative;
         font-size:20px;
         color:#333;
@@ -40,7 +41,7 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
         color:#a1a1a1;
     }
     img{
-        margin-top:30px;
+        /* margin-top:30px; */
     }
 </style>
 <div class="cracha">
