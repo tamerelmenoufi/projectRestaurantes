@@ -6,6 +6,10 @@
         border:solid 1px #ccc;
         font-family:'verdana';
         padding:15px;
+        background-image:url(img/prato_cheio.png);
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
     }
     .titulo{
         font-weight:bold;
@@ -104,7 +108,7 @@
     }
 </style>
 <div class="form">
-    <img src='img/prato_cheio.png' width="200" />
+    <!-- <img src='img/prato_cheio.png' width="200" /> -->
     <div class="titulo">FICHA DE CADASTRO - Prato Cheio</div>
     <div class="nome">
         <span>Nome Completo:</span>
