@@ -18,6 +18,7 @@
         background-size:50%;
         background-position:center;
         background-repeat:no-repeat;
+        opacity:0.2;
     }
     .titulo{
         font-weight:bold;
