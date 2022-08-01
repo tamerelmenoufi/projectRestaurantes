@@ -1,5 +1,5 @@
 <?php
-$comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":"(92) 99188-6570","endereco":"Rua Monsenhor Coutinho, 600, Edifício Maximino Correia, Apto 1302, CEP 69010-110, Manaus,  Amazonas"}';
+$comando = '{"nome":"FULANO DE SILVA E COSTA","cpf":"123.456.789-10","telefone":"(92) 99999-8888","endereco":"Rua principal, 11, Edifício Azul, Apto 1504, CEP 69000-000, Manaus,  Amazonas"}';
 ?>
 <style>
     .cracha{
@@ -52,8 +52,8 @@ $comando = '{"nome":"Tamer Mohamed Elmenoufi","cpf":"601.109.702-25","telefone":
 <div class="cracha">
     <div class="apoio"></div>
     <img src='img/prato_cheio.png' width="200" />
-    <div class="nome">TAMER MOHAMED ELMENOUFI</div>
+    <div class="nome">FULANO DE SILVA E COSTA</div>
     <img src='lib/vendor/barcode/?f=png&s=qr&d=<?=$comando?>' width="300" height="300" />
-    <div class="cpf">601.109.702-25</div>
+    <div class="cpf">123.456.789-10</div>
     <div class="validade">Válido em todos os restaurantes Prato Cheio<br>Governo do Estado do Amazonas</div>
 </div>
