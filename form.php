@@ -7,7 +7,7 @@
         font-family:'verdana';
         padding:15px;
         background-image:url(img/prato_cheio.png);
-        background-size:cover;
+        background-size:50%;
         background-position:center;
         background-repeat:no-repeat;
     }
