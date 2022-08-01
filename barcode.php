@@ -1,0 +1,1 @@
+<img src="vendor/barcode/?f=png&s=qr&d=tamer mohamed Elmenoufi" width="300" height="300" />
