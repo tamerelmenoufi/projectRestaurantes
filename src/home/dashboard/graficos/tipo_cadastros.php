@@ -36,7 +36,7 @@ $md5 = md5($_POST['rotulo'].$md5);
             data: {
                 labels: [<?=$R?>],
                 datasets: [{
-                    label: [<?=$R.' - '.$_POST['rotulo']?>],
+                    label: [<?=$R?>],
                     data: [<?=$Q?>],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
