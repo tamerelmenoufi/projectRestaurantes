@@ -27,7 +27,7 @@
 
     <div class="row mb-1">
       <div class="col">
-        <a href="./form.php" class="text-decoration-none" data-bs-dismiss="offcanvas" aria-label="Close">
+        <a href="./form.php" target='_blank' class="text-decoration-none" data-bs-dismiss="offcanvas" aria-label="Close">
           <i class="fa-solid fa-rectangle-list"></i> Formulário (Pré-Cadastro)
         </a>
       </div>
