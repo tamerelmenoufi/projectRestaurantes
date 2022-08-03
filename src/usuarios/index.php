@@ -51,7 +51,7 @@
                   <td><?=$d->cpf?></td>
                   <td><?=$d->local?></td>
                   <td>
-                    <a href="./cartao.php?<?=md5($d->codigo)?>" class="btn btn-primary" cartao="<?=$d->codigo?>">
+                    <a href="./cartao.php?c=<?=md5($d->codigo)?>" target="_blank" class="btn btn-primary" cartao="<?=$d->codigo?>">
                       Cartão
                     </a>
                     <?php
