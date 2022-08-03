@@ -94,7 +94,7 @@
         $("button[delete]").click(function(){
             deletar = $(this).attr("delete");
             $.ajax({
-                url:"src/usuarios/form.php",
+                url:"src/usuarios/index.php",
                 type:"POST",
                 data:{
                     delete:deletar
