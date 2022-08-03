@@ -13,8 +13,9 @@ $md5 = md5($_POST['rotulo'].$md5);
     $query = "
         select
               *,
+              if(voto = 'excelente', 1, if(voto = 'bom', 2, 3)) as ordem,
               count(*) as qt
-        from votos group by voto
+        from votos group by voto order by ordem
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];
