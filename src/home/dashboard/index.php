@@ -1,6 +1,12 @@
 <?php
     include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 ?>
+
+<style>
+  div[tabela]{
+    overflow:auto;
+  }
+</style>
 <div class="col">
   <div class="m-3">
 
