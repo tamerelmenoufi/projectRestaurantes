@@ -94,9 +94,9 @@
 
       <div class="col">
         <div class="card">
-          <h5 class="card-header">Pesquisa de Satisfação</h5>
+          <h5 class="card-header">Tipo de Cadastros</h5>
           <div class="card-body">
-            <div class="Gvotos"></div>
+            <div grafico="tipo_cadastros"></div>
           </div>
         </div>
       </div>
@@ -128,12 +128,25 @@
   $(function(){
     Carregando('none');
 
-    $.ajax({
-      url:"src/home/dashboard/graficos/exemplo.php",
-      success:function(dados){
-        $(".Gvotos").html(dados);
-      }
-    });
+    const Graficos = (r) => {
+        $.ajax({
+          url:`src/home/dashboard/graficos/${r.local}`,
+          type:"POST",
+          data:{
+            rotulo:r.rotulo
+          }
+          success:function(dados){
+            obj.html(dados);
+          }
+        });
+    }
+
+    $("div[grafico]").each(function(){
+      obj = $(this);
+      local = $(this).attr(grafico);
+      rotulo = $(this).parent('div').parent('div').children('h5').text();
+      Graficos({local, obj, rotulo});
+    })
 
   })
 </script>
