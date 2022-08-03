@@ -4,7 +4,7 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 
 if(!$_GET['c']){ exit(); }
 
-echo $query = "select * from clientes where md5(codigo) = '{$_GET['c']}'";
+$query = "select * from clientes where md5(codigo) = '{$_GET['c']}'";
 $result = mysqli_query($con, $query);
 if(!mysqli_num_rows($result)) exit();
 
