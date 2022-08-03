@@ -4,7 +4,8 @@ $md5 = md5($_POST['rotulo'].$md5);
 ?>
 <style>
     .excelente{
-        color:green;
+        color:rgb(75, 192, 192, 0.2);
+        border:solid 1px rgb(75, 192, 192, 1);
         font-size:30px;
         font-weight:bold;
     }

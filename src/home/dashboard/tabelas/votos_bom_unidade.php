@@ -4,7 +4,8 @@ $md5 = md5($_POST['rotulo'].$md5);
 ?>
 <style>
     .bom{
-        color:orange;
+        color:rgb(255, 159, 64, 0.2);
+        border:solid 1px rgb(255, 159, 64, 1);
         font-size:30px;
         font-weight:bold;
     }
