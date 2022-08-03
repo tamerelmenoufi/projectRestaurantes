@@ -2,7 +2,7 @@
 
 include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 
-print_r($_SESSION);
+print_r($_GET);
 
 if(!$_GET['c'] and !$_SESSION['pcCartao']){ exit(); }
 else {
