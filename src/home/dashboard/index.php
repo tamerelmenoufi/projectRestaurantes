@@ -131,7 +131,7 @@
     const Graficos = (r) => {
       console.log(r.local);
         $.ajax({
-          url:`src/home/dashboard/graficos/${r.local}`,
+          url:`src/home/dashboard/graficos/${r.local}.php`,
           type:"POST",
           data:{
             rotulo:r.rotulo
@@ -146,7 +146,7 @@
       obj = $(this);
       local = $(this).attr("grafico");
       rotulo = $(this).parent('div').parent('div').children('h5').text();
-      Graficos({"local":local, "obj":obj, "rotulo":rotulo});
+      Graficos({local, obj, rotulo});
     })
 
   })
