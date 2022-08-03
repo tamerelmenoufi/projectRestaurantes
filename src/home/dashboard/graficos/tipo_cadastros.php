@@ -10,7 +10,7 @@ $md5 = md5($_POST['rotulo'].$md5);
 
 <?php
 
-    $query = "
+    echo $query = "
     SELECT
         (SELECT count(*) as app FROM `clientes` where local != '') as app,
         (SELECT count(*) as app FROM `clientes` where local = '') as cartao
