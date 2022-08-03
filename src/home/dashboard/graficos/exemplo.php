@@ -30,7 +30,7 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 const TiposCtx<?=$md5?> = document.getElementById('Tipos<?=$md5?>');
     const Tipos<?=$md5?> = new Chart(TiposCtx<?=$md5?>,
         {
-            type: 'bar',
+            type: 'pie',
             data: {
                 labels: [<?=$R?>],
                 datasets: [{

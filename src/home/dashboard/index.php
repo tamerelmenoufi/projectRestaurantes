@@ -92,14 +92,6 @@
   <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px;">
 
-    <div class="col">
-        <div class="card">
-          <h5 class="card-header">Pesquisa de Satisfação</h5>
-          <div class="card-body">
-            <div class="Gvotos"></div>
-          </div>
-        </div>
-      </div>
       <div class="col">
         <div class="card">
           <h5 class="card-header">Pesquisa de Satisfação</h5>
@@ -112,13 +104,18 @@
         <div class="card">
           <h5 class="card-header">Pesquisa de Satisfação</h5>
           <div class="card-body">
-            <div class="Gvotos"></div>
+            <div class="Ggeral"></div>
           </div>
         </div>
       </div>
-
-
-
+      <div class="col">
+        <div class="card">
+          <h5 class="card-header">Pesquisa de Satisfação</h5>
+          <div class="card-body">
+            <div class="Gteste"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
