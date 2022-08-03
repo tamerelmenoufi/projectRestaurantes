@@ -129,7 +129,7 @@
     Carregando('none');
 
     const Graficos = (r) => {
-      console.log(r);
+      console.log(r.local);
         $.ajax({
           url:`src/home/dashboard/graficos/${r.local}`,
           type:"POST",
