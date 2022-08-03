@@ -25,8 +25,7 @@ $md5 = md5($_POST['rotulo'].$md5);
         left join restaurantes b on a.restaurante = b.codigo
         left join clientes c on a.cliente = c.cpf
         where a.voto = 'Bom'
-        group by a.restaurante
-        order by qt desc
+        order by restaurante, usuario desc
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];
