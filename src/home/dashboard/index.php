@@ -6,7 +6,7 @@
 
     <h4>Título da página</h4>
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col">
         <div class="card">
           <h5 class="card-header">Clientes Cadastrados</h5>
@@ -46,10 +46,6 @@
         </div>
       </div>
     </div>
-
-
-
-
 
     <div class="row" style="margin-top:20px;">
       <div class="col">
@@ -91,27 +87,38 @@
         </div>
       </div>
     </div>
+ -->
 
-
-
-
-
-
-
-
-
-
+  <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px;">
+
+    <div class="col">
+        <div class="card">
+          <h5 class="card-header">Pesquisa de Satisfação</h5>
+          <div class="card-body">
+            <div class="Gvotos"></div>
+          </div>
+        </div>
+      </div>
       <div class="col">
         <div class="card">
           <h5 class="card-header">Pesquisa de Satisfação</h5>
           <div class="card-body">
-
             <div class="Gvotos"></div>
-
           </div>
         </div>
       </div>
+      <div class="col">
+        <div class="card">
+          <h5 class="card-header">Pesquisa de Satisfação</h5>
+          <div class="card-body">
+            <div class="Gvotos"></div>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
 
 
