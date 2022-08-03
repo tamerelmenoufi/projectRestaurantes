@@ -12,7 +12,7 @@
         <div class="card">
           <h5 class="card-header">Lista de Usuários</h5>
           <div class="card-body">
-            <div style="display:flex; content-items:right">
+            <div style="display:flex; justify-content:end">
                 <button class="btn btn-primary">Novo</button>
             </div>
 
