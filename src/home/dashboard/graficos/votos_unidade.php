@@ -53,7 +53,7 @@ $md5 = md5($_POST['rotulo'].$md5);
                         'rgba(255, 206, 86, 1)',
                     ],
                     borderWidth: 1,
-                    rotulos: [<?=$R?>]
+                    rotulos: [<?=$Q?>]
                 }]
             }
         }
