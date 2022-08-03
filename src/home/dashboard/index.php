@@ -143,7 +143,7 @@
 
     $("div[grafico]").each(function(){
       obj = $(this);
-      local = $(this).attr(grafico);
+      local = $(this).attr("grafico");
       rotulo = $(this).parent('div').parent('div').children('h5').text();
       Graficos({local, obj, rotulo});
     })
