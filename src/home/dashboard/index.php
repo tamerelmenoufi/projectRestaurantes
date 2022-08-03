@@ -138,6 +138,9 @@
           },
           success:function(dados){
             obj.html(dados);
+          },
+          error:{
+            console.log('Erro');
           }
         });
     }
