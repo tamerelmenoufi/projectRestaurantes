@@ -117,8 +117,27 @@
         </div>
       </div>
     </div>
+
+
+  <!-- Pesquisa de satisfação Gráficos -->
+    <div class="row" style="margin-top:20px; margin-bottom:20px;">
+
+      <div class="col-md-6">
+        <div class="card">
+          <h5 class="card-header">Votos por Unidade</h5>
+          <div class="card-body">
+            <div grafico="votos_unidade"></div>
+          </div>
+        </div>
+      </div>
+
+
   </div>
 </div>
+
+
+
+
 
 <script>
   $(function(){
