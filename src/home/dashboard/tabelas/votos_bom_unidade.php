@@ -41,7 +41,7 @@ $md5 = md5($_POST['rotulo'].$md5);
             <td><?=$d->restaurante?></td>
             <td><?=$d->usuario?></td>
             <td>
-                <i class="fa-regular fa-face-meh bom"></i>
+                <i class="fa-regular fa-face-meh icon"></i>
             </td>
         </tr>
 <?php
