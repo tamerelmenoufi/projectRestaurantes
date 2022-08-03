@@ -22,7 +22,7 @@
             <div style="display:flex; justify-content:end">
                 <button
                     novoCadastro
-                    class="btn btn-primary"
+                    class="btn btn-success"
                     data-bs-toggle="offcanvas"
                     href="#offcanvasDireita"
                     role="button"
