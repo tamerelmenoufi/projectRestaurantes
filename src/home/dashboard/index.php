@@ -124,7 +124,7 @@
 
       <div class="col-md-4">
         <div class="card">
-          <h5 class="card-header">Votos por Unidade</h5>
+          <h5 class="card-header">Excelente - por Unidade</h5>
           <div class="card-body">
             <div grafico="votos_excelente_unidade"></div>
           </div>
@@ -133,7 +133,7 @@
 
       <div class="col-md-4">
         <div class="card">
-          <h5 class="card-header">Votos por Unidade</h5>
+          <h5 class="card-header">Bom - por Unidade</h5>
           <div class="card-body">
             <div grafico="votos_bom_unidade"></div>
           </div>
@@ -142,7 +142,7 @@
 
       <div class="col-md-4">
         <div class="card">
-          <h5 class="card-header">Votos por Unidade</h5>
+          <h5 class="card-header">Ruim - por Unidade</h5>
           <div class="card-body">
             <div grafico="votos_ruim_unidade"></div>
           </div>

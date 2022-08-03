@@ -17,7 +17,7 @@ $md5 = md5($_POST['rotulo'].$md5);
             count(*) as qt
         from votos a
         left join restaurantes b on a.restaurante = b.codigo
-        where a.voto = 'excelente'
+        where a.voto = 'Bom'
         group by a.restaurante
         order by qt desc
     ";
