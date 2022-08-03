@@ -41,3 +41,12 @@ $md5 = md5($_POST['rotulo'].$md5);
 ?>
     </tbody>
 </table>
+
+<script>
+    $(function(){
+
+        const H = $('div[grafico="<?=$_POST['local']?>"]').height();
+        $('div[tabela="<?=$_POST['local']?>"]').height(H);
+
+    })
+</script>
