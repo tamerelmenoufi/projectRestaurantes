@@ -51,9 +51,9 @@
                   <td><?=$d->cpf?></td>
                   <td><?=$d->local?></td>
                   <td>
-                    <button class="btn btn-primary" cartao="<?=$d->codigo?>">
+                    <a href="./cartao.php?<?=md5($d->codigo)?>" class="btn btn-primary" cartao="<?=$d->codigo?>">
                       Cartão
-                    </button>
+                    </a>
                     <?php
                     if(!$d->local){
                     ?>
