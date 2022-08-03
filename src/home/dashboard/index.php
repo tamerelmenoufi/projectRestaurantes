@@ -94,7 +94,7 @@
 
       <div class="col">
         <div class="card">
-          <h5 class="card-header">Tipo de Cadastros</h5>
+          <h5 class="card-header">Registro de Cadastros</h5>
           <div class="card-body">
             <div grafico="tipo_cadastros"></div>
           </div>
@@ -102,9 +102,9 @@
       </div>
       <div class="col">
         <div class="card">
-          <h5 class="card-header">Pesquisa de Satisfação</h5>
+          <h5 class="card-header">Registro de Votos</h5>
           <div class="card-body">
-            <div class="Ggeral"></div>
+          <div grafico="tipo_votos"></div>
           </div>
         </div>
       </div>

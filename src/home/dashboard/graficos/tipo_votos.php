@@ -11,16 +11,17 @@ $md5 = md5($_POST['rotulo'].$md5);
 <?php
 
     $query = "
-    SELECT
-        (SELECT count(*) as app FROM `clientes` where local != '') as app,
-        (SELECT count(*) as app FROM `clientes` where local = '') as cartao
+        select
+              *,
+              count(*) as qt
+        from votos group by voto
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];
     $Quantidade = [];
     while($d = mysqli_fetch_object($result)){
-      $Rotulos = ['Com Registros', 'Sem Registros'];
-      $Quantidade = [$d->app, $d->cartao];
+      $Rotulos[] = $d->voto;
+      $Quantidade[] = $d->qt;
     }
     $R = (($Rotulos)?"'".implode("','",$Rotulos)."'":0);
     $Q = (($Quantidade)?implode(",",$Quantidade):0);
