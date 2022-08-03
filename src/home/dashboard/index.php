@@ -137,7 +137,7 @@
             rotulo:r.rotulo
           },
           success:function(dados){
-            $(`div[grafico="${r.local}"]`)obj.html(dados);
+            $(`div[grafico="${r.local}"]`).html(dados);
           },
           error:function(){
             console.log('Erro');
