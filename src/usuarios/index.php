@@ -69,7 +69,7 @@
             $.ajax({
                 url:"src/usuarios/form.php",
                 success:function(dados){
-                    $("#offcanvasDireita").html(dados);
+                    $(".LateralDireita").html(dados);
                 }
             })
         })
