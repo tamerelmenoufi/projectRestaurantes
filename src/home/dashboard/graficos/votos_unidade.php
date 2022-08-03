@@ -17,7 +17,7 @@ $md5 = md5($_POST['rotulo'].$md5);
             count(*) as qt
         from votos a
         left join restaurantes b on a.restaurante = b.codigo
-        group by a.restaurante
+        group by a.restaurante, a.voto
         order by qt desc
     ";
     $result = mysqli_query($con, $query);
