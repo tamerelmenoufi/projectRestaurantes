@@ -93,16 +93,28 @@
 
         $("button[delete]").click(function(){
             deletar = $(this).attr("delete");
-            $.ajax({
-                url:"src/usuarios/index.php",
-                type:"POST",
-                data:{
-                    delete:deletar
-                },
-                success:function(dados){
-                    $("#paginaHome").html(dados);
+            $.confirm({
+                content:"Deseja realmente excluir o cadastro ?",
+                title:false,
+                buttons:{
+                    'SIM':function(){
+                        $.ajax({
+                            url:"src/usuarios/index.php",
+                            type:"POST",
+                            data:{
+                                delete:deletar
+                            },
+                            success:function(dados){
+                                $("#paginaHome").html(dados);
+                            }
+                        })
+                    },
+                    'NÃO':function(){
+
+                    }
                 }
-            })
+            });
+
         })
 
     })
