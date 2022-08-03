@@ -119,10 +119,9 @@
     </div>
 
 
-  <!-- Pesquisa de satisfação Gráficos -->
+    <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px; margin-bottom:20px;">
-
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="card">
           <h5 class="card-header">Excelente - por Unidade</h5>
           <div class="card-body">
@@ -131,7 +130,21 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-6">
+        <div class="card">
+          <h5 class="card-header">Tabela Excelente - por Unidade</h5>
+          <div class="card-body">
+            <div tabela="votos_excelente_unidade"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Pesquisa de satisfação Gráficos -->
+    <div class="row" style="margin-top:20px; margin-bottom:20px;">
+      <div class="col-md-6">
         <div class="card">
           <h5 class="card-header">Bom - por Unidade</h5>
           <div class="card-body">
@@ -140,7 +153,20 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-6">
+        <div class="card">
+          <h5 class="card-header">Tabela Bom - por Unidade</h5>
+          <div class="card-body">
+            <div tabela="votos_bom_unidade"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Pesquisa de satisfação Gráficos -->
+    <div class="row" style="margin-top:20px; margin-bottom:20px;">
+      <div class="col-md-6">
         <div class="card">
           <h5 class="card-header">Ruim - por Unidade</h5>
           <div class="card-body">
@@ -148,6 +174,18 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <h5 class="card-header">Tabela Ruim - por Unidade</h5>
+          <div class="card-body">
+            <div tabela="votos_ruim_unidade"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 
   </div>
@@ -182,6 +220,32 @@
       rotulo = $(this).parent('div').parent('div').children('h5').text();
       Graficos({local, rotulo});
     })
+
+
+
+    const Tabelas = (r) => {
+        $.ajax({
+          url:`src/home/dashboard/tabelas/${r.local}.php`,
+          type:"POST",
+          data:{
+            rotulo:r.rotulo
+          },
+          success:function(dados){
+            $(`div[tabela="${r.local}"]`).html(dados);
+          },
+          error:function(){
+            console.log('Erro');
+          }
+        });
+    }
+
+    $("div[tabela]").each(function(){
+      local = $(this).attr("tabela");
+      rotulo = $(this).parent('div').parent('div').children('h5').text();
+      Graficos({local, rotulo});
+    })
+
+
 
   })
 </script>
