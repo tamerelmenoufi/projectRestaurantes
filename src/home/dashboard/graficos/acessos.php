@@ -1,5 +1,6 @@
 <?php
 include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
+$md5 = md5($_POST['rotulo'].$md5);
 ?>
 
 <canvas id="Tipos<?= $md5 ?>" width="400" height="400"></canvas>
@@ -10,17 +11,14 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 <?php
 
     $query = "
-        select
-              *,
-              count(*) as qt
-        from votos group by voto
+        SELECT *, count(*) as quantidade FROM `clientes_logs` group by origem;
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];
     $Quantidade = [];
     while($d = mysqli_fetch_object($result)){
-      $Rotulos[] = $d->voto;
-      $Quantidade[] = $d->qt;
+      $Rotulos[] = strtoupper($d->origem);
+      $Quantidade[] = $d->quantidade;
     }
     $R = (($Rotulos)?"'".implode("','",$Rotulos)."'":0);
     $Q = (($Quantidade)?implode(",",$Quantidade):0);

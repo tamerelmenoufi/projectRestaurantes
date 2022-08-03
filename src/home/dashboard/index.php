@@ -110,9 +110,9 @@
       </div>
       <div class="col">
         <div class="card">
-          <h5 class="card-header">Pesquisa de Satisfação</h5>
+          <h5 class="card-header">Registro de Acessos</h5>
           <div class="card-body">
-            <div class="Gteste"></div>
+            <div grafico="acessos"></div>
           </div>
         </div>
       </div>
