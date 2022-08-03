@@ -12,13 +12,13 @@ $md5 = md5($_POST['rotulo'].$md5);
 
     $query = "
         select
-              a.*,
-              concat(b.local,' - ',b.titulo) as restaurante
-              count(*) as qt
+            a.*,
+            concat(b.local,' - ',b.titulo) as restaurante,
+            count(*) as qt
         from votos a
         left join restaurantes b on a.restaurante = b.codigo
-        order by qt desc
         group by a.restaurante
+        order by qt desc
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];
