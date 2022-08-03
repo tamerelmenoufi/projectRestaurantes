@@ -3,7 +3,7 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 $md5 = md5($_POST['rotulo'].$md5);
 ?>
 <style>
-    .icon{
+    .bom{
         color:orange;
         font-size:30px;
         font-weight:bold;
@@ -41,7 +41,7 @@ $md5 = md5($_POST['rotulo'].$md5);
             <td><?=$d->restaurante?></td>
             <td><?=$d->usuario?></td>
             <td>
-                <i class="fa-regular fa-face-meh icon"></i>
+                <i class="fa-regular fa-face-meh bom"></i>
             </td>
         </tr>
 <?php
