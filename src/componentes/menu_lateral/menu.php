@@ -7,7 +7,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <h5>Prato Cheio - Governo do Amazonas</h5>
+    <h5>Prato Cheio - Governo do Estado do Amazonas</h5>
 
     <div class="row mb-1">
       <div class="col">

@@ -14,6 +14,7 @@
           <div class="card-body">
             <div style="display:flex; justify-content:end">
                 <button
+                    novoCadastro
                     class="btn btn-primary"
                     data-bs-toggle="offcanvas"
                     href="#offcanvasDireita"
@@ -60,3 +61,17 @@
 
   </div>
 </div>
+
+
+<script>
+    $(function(){
+        $("button[novoCadastro]").click(function(){
+            $.ajax({
+                url:"src/usuarios/form.php",
+                success:function(dados){
+                    $("#offcanvasDireita").html(dados);
+                }
+            })
+        })
+    })
+</script>
