@@ -2,7 +2,13 @@
 include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 $md5 = md5($_POST['rotulo'].$md5);
 ?>
-
+<style>
+    .icon{
+        color:red;
+        font-size:30px;
+        font-weight:bold;
+    }
+</style>
 <table class="table table-hover">
 
     <thead>
@@ -34,7 +40,9 @@ $md5 = md5($_POST['rotulo'].$md5);
         <tr>
             <td><?=$d->restaurante?></td>
             <td><?=$d->usuario?></td>
-            <td><?=$d->voto?></td>
+            <td>
+                <i class="fa-regular fa-face-frown icon"></i>
+            </td>
         </tr>
 <?php
     }
