@@ -13,7 +13,13 @@
           <h5 class="card-header">Lista de Usuários</h5>
           <div class="card-body">
             <div style="display:flex; justify-content:end">
-                <button class="btn btn-primary">Novo</button>
+                <button
+                    class="btn btn-primary"
+                    data-bs-toggle="offcanvas"
+                    href="#offcanvasDireita"
+                    role="button"
+                    aria-controls="offcanvasDireita"
+                >Novo</button>
             </div>
 
 
