@@ -27,7 +27,8 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 
 ?>
 
-const TiposCtx<?=$md5?> = document.getElementById('Tipos<?=$md5?>');
+    const TiposCtx<?=$md5?> = document.getElementById('Tipos<?=$md5?>');
+
     const Tipos<?=$md5?> = new Chart(TiposCtx<?=$md5?>,
         {
             type: 'pie',
@@ -49,50 +50,7 @@ const TiposCtx<?=$md5?> = document.getElementById('Tipos<?=$md5?>');
                     borderWidth: 1,
                     rotulos: [<?=$R?>]
                 }]
-            },
-            options: {
-                indexAxis: 'y',
-                // Elements options apply to all of the options unless overridden in a dataset
-                // In this case, we are setting the border of each horizontal bar to be 2px wide
-                elements: {
-                    bar: {
-                        borderWidth: 2,
-                    }
-                },
-                responsive: true,
-                plugins: {
-                    legend: false/*{
-        position: 'right',
-      }*/,
-                    title: {
-                        display: true,
-                        text: 'Pesquisa de satisfação'
-                    },
-
-
-                    tooltip: {
-                        callbacks: {
-                            title: function (context) {
-                                indx = context[0].parsed.y;
-                                return context[0].dataset.rotulos[indx];
-                            },
-                            label: function (context) {
-                                indx = context.parsed.y;
-                                var label = ' ' + context.dataset.label[indx] || '';
-
-                                if (label) {
-                                    label += ' : ';
-                                }
-                                if (context.parsed.y !== null) {
-                                    label += context.parsed.x + ' Registro(s)';
-                                }
-                                return label;
-                            }
-                        }
-                    }
-
-                }
-            },
+            }
         }
     );
 
