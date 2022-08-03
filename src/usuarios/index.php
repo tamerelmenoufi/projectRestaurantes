@@ -92,12 +92,12 @@
         })
 
         $("button[delete]").click(function(){
-            let delete = $(this).attr("delete");
+            deletar = $(this).attr("delete");
             $.ajax({
                 url:"src/usuarios/form.php",
                 type:"POST",
                 data:{
-                    delete
+                    delete:deletar
                 },
                 success:function(dados){
                     $("#paginaHome").html(dados);
