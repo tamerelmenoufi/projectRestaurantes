@@ -4,7 +4,7 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && empty($_POST))
     $_POST = json_decode(file_get_contents('php://input'), true);
 
-
+    //Inclusão dos dados para os logs dos clientes / Usuários
     $query = "REPLACE INTO clientes_logs set
                                         cpf = '{$_POST['cpf']}',
                                         titulo = '{$_POST['titulo']}',
