@@ -3,9 +3,6 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 $md5 = md5($_POST['rotulo'].$md5);
 ?>
 
-
-
-
 <table class="table table-hover">
 
     <thead>
@@ -18,7 +15,7 @@ $md5 = md5($_POST['rotulo'].$md5);
     <tbody>
 <?php
 
-    $query = "
+    echo $query = "
         select
             a.*,
             concat(b.titulo,' - ',b.local) as restaurante,
