@@ -134,7 +134,7 @@
           type:"POST",
           data:{
             rotulo:r.rotulo
-          }
+          },
           success:function(dados){
             obj.html(dados);
           }
