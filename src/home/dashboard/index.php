@@ -92,7 +92,7 @@
   <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px;">
 
-      <div class="col">
+      <div class="col-4">
         <div class="card">
           <h5 class="card-header">Registro de Cadastros</h5>
           <div class="card-body">
@@ -100,7 +100,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-4">
         <div class="card">
           <h5 class="card-header">Registro de Votos</h5>
           <div class="card-body">
@@ -108,7 +108,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-4">
         <div class="card">
           <h5 class="card-header">Registro de Acessos</h5>
           <div class="card-body">
@@ -117,9 +117,6 @@
         </div>
       </div>
     </div>
-
-
-
 
   </div>
 </div>
