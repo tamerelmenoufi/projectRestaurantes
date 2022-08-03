@@ -55,7 +55,48 @@ $md5 = md5($_POST['rotulo'].$md5);
                     borderWidth: 1,
                     rotulos: [<?=$Q?>]
                 }]
-            }
+            },
+            options: {
+                indexAxis: 'y',
+                elements: {
+                    bar: {
+                        borderWidth: 2,
+                    }
+                },
+                responsive: true,
+                plugins: {
+                    legend: false/*{
+        position: 'right',
+      }*/,
+                    title: {
+                        display: false,
+                        text: 'Pesquisa de satisfação'
+                    },
+
+
+                    tooltip: {
+                        callbacks: {
+                            title: function (context) {
+                                indx = context[0].parsed.y;
+                                return context[0].dataset.rotulos[indx];
+                            },
+                            label: function (context) {
+                                indx = context.parsed.y;
+                                var label = ' ' + context.dataset.label[indx] || '';
+
+                                if (label) {
+                                    label += ' : ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    label += context.parsed.x + ' Registro(s)';
+                                }
+                                return label;
+                            }
+                        }
+                    }
+
+                }
+            },
         }
     );
 
