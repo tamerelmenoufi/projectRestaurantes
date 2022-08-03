@@ -15,13 +15,15 @@ $md5 = md5($_POST['rotulo'].$md5);
     <tbody>
 <?php
 
-    echo $query = "
+    $query = "
         select
             a.*,
             concat(b.titulo,' - ',b.local) as restaurante,
+            c.nome as usuario,
             count(*) as qt
         from votos a
         left join restaurantes b on a.restaurante = b.codigo
+        left join clientes c on a.cliente = c.cpf
         where a.voto = 'Bom'
         group by a.restaurante
         order by qt desc
@@ -32,8 +34,8 @@ $md5 = md5($_POST['rotulo'].$md5);
     while($d = mysqli_fetch_object($result)){
 ?>
         <tr>
-            <td><?=$d->local?></td>
-            <td><?=$d->nome?></td>
+            <td><?=$d->restaurante?></td>
+            <td><?=$d->usuario?></td>
             <td><?=$d->voto?></td>
         </tr>
 <?php
