@@ -1,7 +1,7 @@
 <?php
 
 include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
-print_r($_SESSION);
+
 if(!$_GET['c']){ exit(); }
 
 echo $query = "select * from clientes where md5(codigo) = '{$_GET['c']}'";
