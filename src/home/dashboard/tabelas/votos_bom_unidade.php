@@ -19,8 +19,7 @@ $md5 = md5($_POST['rotulo'].$md5);
         select
             a.*,
             concat(b.titulo,' - ',b.local) as restaurante,
-            c.nome as usuario,
-            count(*) as qt
+            c.nome as usuario
         from votos a
         left join restaurantes b on a.restaurante = b.codigo
         left join clientes c on a.cliente = c.cpf
