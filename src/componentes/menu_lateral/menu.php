@@ -12,7 +12,7 @@
     <div class="row mb-1">
       <div class="col">
         <a url="src/home/dashboard/index.php" href="#" class="text-decoration-none" data-bs-dismiss="offcanvas" aria-label="Close">
-          <i class="fa-solid fa-clipboard-list"></i> Dashboard
+          <i class="fa-solid fa-chart-pie"></i> Dashboard
         </a>
       </div>
     </div>
@@ -20,7 +20,7 @@
     <div class="row mb-1">
       <div class="col">
         <a url="src/usuarios/index.php" href="#" class="text-decoration-none" data-bs-dismiss="offcanvas" aria-label="Close">
-          <i class="fa-solid fa-clipboard-list"></i> Usuários
+          <i class="fa-solid fa-users"></i> Usuários
         </a>
       </div>
     </div>
