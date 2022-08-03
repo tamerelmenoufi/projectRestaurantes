@@ -44,13 +44,13 @@ $md5 = md5($_POST['rotulo'].$md5);
                     {
                         label: [<?=$R?>],
                         data: [<?=$Q?>],
-                        backgroundColor: Utils.CHART_COLORS.green,
+                        backgroundColor: 'rgb(75, 192, 192, 0.2)',
                         // [
                         //     'rgba(255, 99, 132, 0.2)',
                         //     'rgba(54, 162, 235, 0.2)',
                         //     'rgba(255, 206, 86, 0.2)',
                         // ],
-                        borderColor: Utils.CHART_COLORS.green
+                        borderColor: 'rgb(75, 192, 192, 1)'
                         // [
                         //     'rgba(255, 99, 132, 1)',
                         //     'rgba(54, 162, 235, 1)',
