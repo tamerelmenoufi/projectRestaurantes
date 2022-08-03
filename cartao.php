@@ -9,7 +9,7 @@ else {
     exit();
 }
 
-$query = "select * from clientes where md5(codigo) = '{$_SESSION['pcCartao']}'";
+echo $query = "select * from clientes where md5(codigo) = '{$_SESSION['pcCartao']}'";
 $result = mysqli_query($con, $query);
 if(!mysqli_num_rows($result)) exit();
 
