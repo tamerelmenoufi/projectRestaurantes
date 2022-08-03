@@ -1,5 +1,13 @@
 <?php
-$comando = '{"nome":"FULANO DE SILVA E COSTA","cpf":"123.456.789-10","telefone":"(92) 99999-8888","endereco":"Rua principal, 11, Edifício Azul, Apto 1504, CEP 69000-000, Manaus,  Amazonas"}';
+
+$dados = [
+    'nome' => "Tamer Mohamed Elmenoufi",
+    'cpf' => "601.109.702-25",
+    'telefone' => "(92) 99188-6570",
+    'endereco' => "Rua Monsenhor Coutinho, 600, Edifício Maximino Correia, Apartamento 1302, CEP: 69010-110, Centro, Manaus, Amazonas",
+];
+
+$comando = json_encode($dados);
 ?>
 <style>
     .cracha{
@@ -52,8 +60,8 @@ $comando = '{"nome":"FULANO DE SILVA E COSTA","cpf":"123.456.789-10","telefone":
 <div class="cracha">
     <div class="apoio"></div>
     <img src='img/prato_cheio.png' width="200" />
-    <div class="nome">FULANO DE SILVA E COSTA</div>
+    <div class="nome"><?=$dados['nome']?></div>
     <img src='lib/vendor/barcode/?f=png&s=qr&d=<?=$comando?>' width="300" height="300" />
-    <div class="cpf">123.456.789-10</div>
+    <div class="cpf"><?=$dados['cpf']?></div>
     <div class="validade">Válido em todos os restaurantes Prato Cheio<br>Governo do Estado do Amazonas</div>
 </div>
