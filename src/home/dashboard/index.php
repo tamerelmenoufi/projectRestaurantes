@@ -125,7 +125,7 @@
                   <th scope="col">Nome</th>
                   <th scope="col">CPF</th>
                   <th scope="col">Local</th>
-                  <th scope="col">Cartão</th>
+                  <th scope="col">Data</th>
                 </tr>
               </thead>
               <tbody>
@@ -138,11 +138,7 @@
                   <td><?=$d->nome?></td>
                   <td><?=$d->cpf?></td>
                   <td><?=$d->local?></td>
-                  <td>
-                    <button class="btn btn-primary" cartao="<?=$d->codigo?>">
-                      Cartão
-                    </button>
-                  </td>
+                  <td><?=dataBr($d->data)?></td>
                 </tr>
                 <?php
                   }
