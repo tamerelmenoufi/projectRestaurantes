@@ -242,7 +242,7 @@
     $("div[tabela]").each(function(){
       local = $(this).attr("tabela");
       rotulo = $(this).parent('div').parent('div').children('h5').text();
-      Graficos({local, rotulo});
+      Tabelas({local, rotulo});
     })
 
 
