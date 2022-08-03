@@ -36,11 +36,11 @@ $md5 = md5($_POST['rotulo'].$md5);
                     label: [<?=$R?>],
                     data: [<?=$Q?>],
                     backgroundColor: [
-                        'rgb(75, 192, 192, 0.2)',
+                        'rgb(255, 205, 86, 0.2)',
                         'rgb(201, 203, 207, 0.2)',
                     ],
                     borderColor: [
-                        'rgb(75, 192, 192, 1)',
+                        'rgb(255, 205, 86, 1)',
                         'rgb(201, 203, 207, 1)',
                     ],
                     borderWidth: 1,
