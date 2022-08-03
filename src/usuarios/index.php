@@ -1,5 +1,12 @@
 <?php
     include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
+
+    if($_POST['delete']){
+        $query = "delete from clientes where codigo = '{$_POST['delete']}'";
+        mysqli_query($con, $query);
+
+    }
+
 ?>
 
 <div class="col">
@@ -47,6 +54,15 @@
                     <button class="btn btn-primary" cartao="<?=$d->codigo?>">
                       Cartão
                     </button>
+                    <?php
+                    if(!$d->local){
+                    ?>
+                    <button class="btn btn-danger" delete="<?=$d->codigo?>">
+                      Excluir
+                    </button>
+                    <?php
+                    }
+                    ?>
                   </td>
                 </tr>
                 <?php
@@ -74,5 +90,20 @@
                 }
             })
         })
+
+        $("button[delete]").click(function(){
+            delete = $(this).attr("delete");
+            $.ajax({
+                url:"src/usuarios/form.php",
+                type:"POST",
+                data:{
+                    delete
+                },
+                success:function(dados){
+                    $("#paginaHome").html(dados);
+                }
+            })
+        })
+
     })
 </script>
