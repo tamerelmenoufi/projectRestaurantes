@@ -145,7 +145,7 @@
       obj = $(this);
       local = $(this).attr("grafico");
       rotulo = $(this).parent('div').parent('div').children('h5').text();
-      Graficos({local, obj, rotulo});
+      Graficos({"local":local, "obj":obj, "rotulo":rotulo});
     })
 
   })
