@@ -2,14 +2,9 @@
 
 include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 print_r($_SESSION);
-if(!$_GET['c'] and !$_SESSION['pcCartao']){ exit(); }
-else {
-    $_SESSION['pcCartao'] = $_GET['c'];
-    header("location:./cartao.php");
-    exit();
-}
+if(!$_GET['c']){ exit(); }
 
-echo $query = "select * from clientes where md5(codigo) = '{$_SESSION['pcCartao']}'";
+echo $query = "select * from clientes where md5(codigo) = '{$_GET['c']}'";
 $result = mysqli_query($con, $query);
 if(!mysqli_num_rows($result)) exit();
 
