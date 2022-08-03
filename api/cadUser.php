@@ -5,6 +5,18 @@
     $_POST = json_decode(file_get_contents('php://input'), true);
 
 
+    $query = "REPLACE INTO clientes_logs set
+                                        cpf = '{$_POST['cpf']}',
+                                        titulo = '{$_POST['titulo']}',
+                                        local = '{$_POST['local']}',
+                                        restaurante = '{$_POST['restaurante']}',
+                                        origem = '{$_POST['origem']}',
+                                        data = '{$_POST['data']}'
+    ";
+
+    mysqli_query($con, $query);
+
+
     $query = "REPLACE INTO clientes set
                                         nome = '{$_POST['nome']}',
                                         cpf = '{$_POST['cpf']}',
