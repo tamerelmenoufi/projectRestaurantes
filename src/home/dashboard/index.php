@@ -204,7 +204,8 @@
           url:`src/home/dashboard/graficos/${r.local}.php`,
           type:"POST",
           data:{
-            rotulo:r.rotulo
+            rotulo:r.rotulo,
+            local:r.local,
           },
           success:function(dados){
             $(`div[grafico="${r.local}"]`).html(dados);
@@ -228,7 +229,8 @@
           url:`src/home/dashboard/tabelas/${r.local}.php`,
           type:"POST",
           data:{
-            rotulo:r.rotulo
+            rotulo:r.rotulo,
+            local:r.local,
           },
           success:function(dados){
             $(`div[tabela="${r.local}"]`).html(dados);

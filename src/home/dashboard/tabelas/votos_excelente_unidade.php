@@ -41,3 +41,12 @@ $md5 = md5($_POST['rotulo'].$md5);
 ?>
     </tbody>
 </table>
+
+<script>
+    $(function(){
+
+        const H = $('div[<?=$_POST['local']?>="votos_excelente_unidade"]');
+        alert(H);
+
+    })
+</script>
