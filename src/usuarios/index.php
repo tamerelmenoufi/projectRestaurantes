@@ -65,6 +65,7 @@
 
 <script>
     $(function(){
+        Carregando('none');
         $("button[novoCadastro]").click(function(){
             $.ajax({
                 url:"src/usuarios/form.php",
