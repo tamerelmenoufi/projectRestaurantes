@@ -1,6 +1,12 @@
 <?php
 include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 $md5 = md5($_POST['rotulo'].$md5);
+
+    echo $query = "
+    SELECT
+        (SELECT count(*) as app FROM `clientes` where local != '') as app,
+        (SELECT count(*) as app FROM `clientes` where local = '') as cartao
+    ";
 ?>
 
 <canvas id="Tipos<?= $md5 ?>" width="400" height="400"></canvas>
