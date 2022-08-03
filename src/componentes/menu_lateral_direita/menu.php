@@ -22,3 +22,21 @@ data-bs-toggle="offcanvas"
 href="#offcanvasDireita"
 role="button"
 aria-controls="offcanvasDireita" -->
+
+<script>
+
+  if( navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/iPad/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i)
+  ){
+      $("#offcanvasDireita").css("--bs-offcanvas-width","100%")
+    }
+  else {
+      $("#offcanvasDireita").css("--bs-offcanvas-width","500px")
+    }
+
+</script>
