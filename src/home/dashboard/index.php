@@ -93,11 +93,43 @@
     </div>
 
 
+
+
+
+
+
+
+
+
+    <div class="row" style="margin-top:20px;">
+      <div class="col">
+        <div class="card">
+          <h5 class="card-header">Pesquisa de Satisfação</h5>
+          <div class="card-body">
+
+            <div class="Gvotos"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
   </div>
 </div>
 
 <script>
   $(function(){
     Carregando('none');
+
+    $.ajax({
+      url:"src/home/dashboard/graficos/exemplo.php",
+      success:function(dados){
+        $(".Gvotos").html(dados);
+      }
+    });
+
   })
 </script>
