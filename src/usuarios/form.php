@@ -20,7 +20,7 @@
             mysqli_query($con, $query);
             $cod = $_POST['codigo'];
         }else{
-            $query = "insert into clientes set data_cadastro = NOW(), {$attr}";
+            $query = "insert into clientes set data = NOW(), {$attr}";
             mysqli_query($con, $query);
             $cod = mysqli_insert_id($con);
         }
@@ -75,7 +75,7 @@
         <div class="row">
             <div class="col">
                 <div style="display:flex; justify-content:end">
-                    <button type="submit" SalvarFoto class="btn btn-success btn-ms">Salvar</button>
+                    <button type="submit" class="btn btn-success btn-ms">Salvar</button>
                     <input type="hidden" id="codigo" value="<?=$_POST['cod']?>" />
                 </div>
             </div>
