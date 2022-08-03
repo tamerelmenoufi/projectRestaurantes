@@ -13,7 +13,7 @@ $md5 = md5($_POST['rotulo'].$md5);
     $query = "
         select
             a.*,
-            concat(b.local,' - ',b.titulo) as restaurante,
+            concat(b.titulo,' - ',b.local) as restaurante,
             count(*) as qt
         from votos a
         left join restaurantes b on a.restaurante = b.codigo
@@ -36,7 +36,7 @@ $md5 = md5($_POST['rotulo'].$md5);
 
     const Tipos<?=$md5?> = new Chart(TiposCtx<?=$md5?>,
         {
-            type: 'pie',
+            type: 'bar',
             data: {
                 labels: [<?=$R?>],
                 datasets: [{
