@@ -139,7 +139,7 @@
           success:function(dados){
             obj.html(dados);
           },
-          error:{
+          error:function(){
             console.log('Erro');
           }
         });
