@@ -35,6 +35,7 @@
                   <th scope="col">Nome</th>
                   <th scope="col">CPF</th>
                   <th scope="col">Local</th>
+                  <th scope="col">Impressão</th>
                   <th scope="col">Cartão</th>
                 </tr>
               </thead>
@@ -48,6 +49,14 @@
                   <td><?=$d->nome?></td>
                   <td><?=$d->cpf?></td>
                   <td><?=$d->local?></td>
+                  <td>
+
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                  </div>
+
+                  </td>
                   <td>
                     <a href="./cartao.php?c=<?=md5($d->codigo)?>" target="Jcartao" class="btn btn-primary" cartao="<?=$d->codigo?>">
                       Cartão
