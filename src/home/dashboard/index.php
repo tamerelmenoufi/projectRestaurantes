@@ -261,7 +261,15 @@
       Tabelas({local, rotulo});
     })
 
-
+    $("input[alterar_data]").change(function(){
+      Carregando();
+      $.ajax({
+        url:"src/home/dashboard/index.php",
+        success:function(dados){
+          $("#paginaHome").html(dados);
+        }
+      });
+    });
 
   })
 </script>
