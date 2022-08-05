@@ -13,7 +13,10 @@
     <h4>Relatórios e estatísticas</h4>
 
   <div class="row" style="margin-top:20px; margin-bottom:20px;">
-    <input type="date" class="form-control" alterar_data />
+    <div class="col-3">
+      <input type="date" class="form-control" alterar_data />
+    </div>
+
   </div>
 
   <!-- Pesquisa de satisfação Gráficos -->
