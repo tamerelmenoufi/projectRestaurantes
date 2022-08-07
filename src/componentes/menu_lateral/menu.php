@@ -33,6 +33,13 @@
       </div>
     </div>
 
+    <div class="row mb-1">
+      <div class="col">
+        <a url="src/app/index.php" href="#" target='_blank' class="text-decoration-none">
+          <i class="fa-solid fa-rectangle-list"></i> Baixar Aplicativo - Proto Cheio
+        </a>
+      </div>
+    </div>
 
   </div>
 </div>
