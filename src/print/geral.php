@@ -2,22 +2,10 @@
     include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 ?>
 
-<style>
-  div[tabela]{
-    overflow:auto;
-  }
-</style>
 <div class="col">
   <div class="m-3">
 
     <h4>Relatórios e estatísticas</h4>
-
-  <div class="row" style="margin-top:20px; margin-bottom:20px;">
-    <div class="col-3">
-      <input type="date" class="form-control" alterar_data />
-    </div>
-    <div class="col-9">Selecione a data para redefinir o relatório</div>
-  </div>
 
   <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px; margin-bottom:20px;">
@@ -51,7 +39,7 @@
 
     <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px; margin-bottom:20px;">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="card">
           <h5 class="card-header">Excelente - por Unidade</h5>
           <div class="card-body">
@@ -60,7 +48,11 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+    </div>
+
+    <!-- Pesquisa de satisfação Gráficos -->
+    <div class="row" style="margin-top:20px; margin-bottom:20px;">
+      <div class="col-md-12">
         <div class="card">
           <h5 class="card-header">Tabela Excelente - por Unidade</h5>
           <div class="card-body">
@@ -70,11 +62,9 @@
       </div>
     </div>
 
-
-
     <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px; margin-bottom:20px;">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="card">
           <h5 class="card-header">Bom - por Unidade</h5>
           <div class="card-body">
@@ -82,8 +72,11 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-md-6">
+    <!-- Pesquisa de satisfação Gráficos -->
+    <div class="row" style="margin-top:20px; margin-bottom:20px;">
+      <div class="col-md-12">
         <div class="card">
           <h5 class="card-header">Tabela Bom - por Unidade</h5>
           <div class="card-body">
@@ -94,9 +87,11 @@
     </div>
 
 
+
+
     <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px; margin-bottom:20px;">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="card">
           <h5 class="card-header">Ruim - por Unidade</h5>
           <div class="card-body">
@@ -104,8 +99,12 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-md-6">
+
+    <!-- Pesquisa de satisfação Gráficos -->
+    <div class="row" style="margin-top:20px; margin-bottom:20px;">
+      <div class="col-md-6=12">
         <div class="card">
           <h5 class="card-header">Tabela Ruim - por Unidade</h5>
           <div class="card-body">
@@ -114,8 +113,6 @@
         </div>
       </div>
     </div>
-
-
 
 
     <div class="row">
