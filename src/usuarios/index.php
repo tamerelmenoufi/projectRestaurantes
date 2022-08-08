@@ -57,7 +57,7 @@
                   <td>
 
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="cartao_impresso" cliente="<?=$d->codigo?>">
+                    <input class="form-check-input" type="checkbox" id="cartao_impresso" <?=(($d->cartao_impresso)?'checked':false)?> cliente="<?=$d->codigo?>">
                   </div>
 
                   </td>
