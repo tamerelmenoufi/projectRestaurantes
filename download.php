@@ -7,6 +7,6 @@
         }
     }
 
-    implode(", ",$Files);
+    echo implode(", ",$Files);
 
     if($_GET) include("src/home/dashboard/csv/{$_GET['f']}");
