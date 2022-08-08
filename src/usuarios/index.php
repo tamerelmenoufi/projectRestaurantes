@@ -2,9 +2,14 @@
     include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 
     if($_POST['delete']){
-        $query = "delete from clientes where codigo = '{$_POST['delete']}'";
-        mysqli_query($con, $query);
+      $query = "delete from clientes where codigo = '{$_POST['delete']}'";
+      mysqli_query($con, $query);
+    }
 
+    if($_POST['impressao']){
+      $query = "update clientes set cartao_impresso = '{$_POST['opc']}' where codigo = '{$_POST['impressao']}'";
+      mysqli_query($con, $query);
+      exit();
     }
 
 ?>
@@ -52,7 +57,7 @@
                   <td>
 
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="cartao_impresso">
+                    <input class="form-check-input" type="checkbox" id="cartao_impresso" cliente="<?=$d->codigo?>">
                   </div>
 
                   </td>
@@ -126,11 +131,27 @@
 
         $("#cartao_impresso").change(function(){
 
+            impressao = $(this).attr("cliente");
+            opc = false;
+
             if($(this).prop("checked") == true){
-              alert('check');
+              opc = 1;
             }else{
-              alert('uncheck');
+              opc = 1;
             }
+
+
+            $.ajax({
+                url:"src/usuarios/index.php",
+                type:"POST",
+                data:{
+                    impressao,
+                    opc
+                },
+                success:function(dados){
+                    // $("#paginaHome").html(dados);
+                }
+            })
 
         });
 
