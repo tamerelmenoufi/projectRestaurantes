@@ -33,7 +33,7 @@
             height:120px;
             background-image:url("img/topo_gov.png");
             background-position:center center;
-            background-size:auto 100%;
+            background-size:100% auto;
             background-repeat:no-repeat;
             z-index:99;
         }
