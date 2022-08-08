@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" name="senha" id="senha" class="form-control" placeholder="E-mail" value="<?=$d->senha?>">
+                    <input type="text" name="senha" id="senha" class="form-control" placeholder="E-mail" value="">
                     <label for="senha">Senha</label>
                 </div>
 
