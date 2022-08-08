@@ -14,7 +14,7 @@ Unidade;Usuário;Voto
         from votos a
         left join restaurantes b on a.restaurante = b.codigo
         left join clientes c on a.cliente = c.cpf
-        where a.voto = 'Ruim' and a.data LIKE '$data%'
+        where a.data LIKE '$data%'
         order by restaurante, usuario desc
     ";
     $result = mysqli_query($con, $query);
