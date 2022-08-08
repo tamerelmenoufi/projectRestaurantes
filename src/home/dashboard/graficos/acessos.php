@@ -11,7 +11,7 @@ $md5 = md5($_POST['rotulo'].$md5);
 <?php
 
     $query = "
-        SELECT *, if(origem != '',origem,'qrcode') as origem, count(*) as quantidade FROM `clientes_logs` group by origem;
+        SELECT if(origem != '',origem,'qrcode') as origem, count(*) as quantidade FROM `clientes_logs` group by origem;
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];
