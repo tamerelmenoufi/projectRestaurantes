@@ -134,7 +134,9 @@
     </div>
 
 
-
+    <div style="width:100%; text-align:right">
+      Baixar planilha em formato CSV - Votação da pesquisa <a href="?download.php?f=votos_unidade" class="btn btn-warning">Baixar</a>
+    </div>
 
     <div class="row">
       <div class="col">

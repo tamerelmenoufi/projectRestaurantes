@@ -4,6 +4,9 @@ $md5 = md5($_POST['rotulo'].$md5);
 $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
 
 ?>
+<div style="width:100%; text-align:right">
+Baixar planilha em formato CSV - Cadastro de Usuários <a href="?download.php?f=clientes_cadastros" class="btn btn-warning">Baixar</a>
+</div>
 <table class="table table-striped table-hover">
     <thead>
     <tr>
