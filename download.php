@@ -6,11 +6,7 @@
             $Files[] = $v;
         }
     }
-
-    echo $file = $_GET['f'].".php";
-    echo "<hr>";
-    print_r($Files);
-
+    $file = $_GET['f'].".php";
     if(in_array($file,$Files)) {
         include("src/home/dashboard/csv/{$file}");
     }
