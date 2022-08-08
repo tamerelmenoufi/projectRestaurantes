@@ -31,7 +31,6 @@
             left:0; */
             width:100%;
             height:120px;
-            margin-bottom:150px;
             background-image:url("img/topo_gov.png");
             background-position:center center;
             background-size:auto 100%;
@@ -44,7 +43,6 @@
             left:0; */
             width:100%;
             height:170px;
-            margin-top:150px;
             background-image:url("img/rodape_gov.png");
             background-position:right;
             background-size:auto 100%;
