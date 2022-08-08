@@ -52,7 +52,7 @@
                   <td>
 
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input class="form-check-input" type="checkbox" id="cartao_impresso">
                   </div>
 
                   </td>
@@ -122,6 +122,17 @@
             });
 
         })
+
+
+        $("#cartao_impresso").change(function(){
+
+            if($(this).prop("checked") == true){
+              alert('check');
+            }else{
+              alert('uncheck');
+            }
+
+        });
 
     })
 </script>
