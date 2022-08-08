@@ -1,5 +1,7 @@
 <?php
     include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
+
+    $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
 ?>
 
 <div class="col">
@@ -130,7 +132,7 @@
                   <th scope="col">Data</th>
                 </tr>
               <?php
-                  $query = "select * from clientes order by codigo desc";
+                  $query = "select * from clientes where data LIKE '$data%' order by codigo desc";
                   $result = mysqli_query($con, $query);
                   while($d = mysqli_fetch_object($result)){
                 ?>
@@ -165,7 +167,7 @@
                   <th scope="col">Voto</th>
                 </tr>
                 <?php
-                  $query = "select a.*, concat(b.local,' - ',b.titulo) as restaurante from votos a left join restaurantes b on a.restaurante = b.codigo order by a.codigo desc";
+                  $query = "select a.*, concat(b.local,' - ',b.titulo) as restaurante from votos a left join restaurantes b on a.restaurante = b.codigo where a.data LIKE '$data%' order by a.codigo desc";
                   $result = mysqli_query($con, $query);
                   while($d = mysqli_fetch_object($result)){
                 ?>
