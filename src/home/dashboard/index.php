@@ -25,7 +25,7 @@
   <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px; margin-bottom:20px;">
 
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card">
           <h5 class="card-header">Registro de Cadastros</h5>
           <div class="card-body">
@@ -33,7 +33,17 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+
+      <div class="col-md-3">
+        <div class="card">
+          <h5 class="card-header">Impressão de Cartões</h5>
+          <div class="card-body">
+            <div grafico="imopressao_cartoes"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
         <div class="card">
           <h5 class="card-header">Registro de Votos</h5>
           <div class="card-body">
@@ -41,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card">
           <h5 class="card-header">Registro de Acessos</h5>
           <div class="card-body">
