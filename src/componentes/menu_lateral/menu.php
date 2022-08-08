@@ -27,6 +27,14 @@
 
     <div class="row mb-1">
       <div class="col">
+        <a url="src/gestores/index.php" href="#" class="text-decoration-none" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fa-solid fa-user-gear"></i> Gestores
+        </a>
+      </div>
+    </div>
+
+    <div class="row mb-1">
+      <div class="col">
         <a href="./form.php" target='_blank' class="text-decoration-none">
           <i class="fa-solid fa-rectangle-list"></i> Formulário (Pré-Cadastro)
         </a>
