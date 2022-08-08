@@ -22,8 +22,8 @@
 
     <style>
         .CorpoApp{
-            margin-top:150px;
-            margin-bottom:190px;
+            /* margin-top:150px;
+            margin-bottom:190px; */
         }
         header{
             position:relative;
