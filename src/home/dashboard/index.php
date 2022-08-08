@@ -17,8 +17,8 @@
       <input type="date" class="form-control" alterar_data />
     </div>
     <div class="col-8">Selecione a data para redefinir o relatório</div>
-    <div class="col-8">
-      <a class="btn btn-primary" href='./print.php?opc=g'>Imprimir</a>
+    <div class="col-1">
+      <a class="btn btn-primary" href='./print.php?opc=g' target='g'>Imprimir</a>
     </div>
   </div>
 
