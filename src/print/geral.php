@@ -114,15 +114,13 @@
           <div class="card-body">
 
             <table class="table table-striped table-hover">
-              <thead>
+              <tbody>
                 <tr>
                   <th scope="col">Nome</th>
                   <th scope="col">CPF</th>
                   <th scope="col">Local</th>
                   <th scope="col">Data</th>
                 </tr>
-              </thead>
-              <tbody>
               <?php
                   $query = "select * from clientes order by codigo desc";
                   $result = mysqli_query($con, $query);
@@ -151,15 +149,13 @@
           <div class="card-body">
 
             <table class="table table-striped table-hover">
-              <thead>
+            <tbody>
                 <tr>
                   <th scope="col">CPF</th>
                   <th scope="col">Restaurante</th>
                   <th scope="col">Data</th>
                   <th scope="col">Voto</th>
                 </tr>
-              </thead>
-              <tbody>
                 <?php
                   $query = "select a.*, concat(b.local,' - ',b.titulo) as restaurante from votos a left join restaurantes b on a.restaurante = b.codigo order by a.codigo desc";
                   $result = mysqli_query($con, $query);
