@@ -19,11 +19,37 @@
     <?php
     include("lib/header.php");
     ?>
+
+    <style>
+        .Topo{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100px;
+            background-image:url("img/topo_gov.png");
+            background-position:center center;
+            background-size:100% auto;
+            background-repeat:no-repeat;
+        }
+        .Rodape{
+            position:fixed;
+            bottom:0;
+            left:0;
+            width:100%;
+            height:60px;
+            background-image:url("img/topo_gov.png");
+            background-position:center center;
+            background-size:100% auto;
+            background-repeat:no-repeat;
+        }
+    </style>
+
   </head>
   <body>
-
+    <div class="Topo"></div>
     <div class="CorpoApp"></div>
-
+    <div class="Rodape"></div>
     <?php
     include("lib/footer.php");
     ?>
