@@ -5,7 +5,7 @@
 <div class="col">
   <div class="m-3">
 
-    <h4>Relatórios e estatísticas</h4>
+    <h4>Relatórios e estatísticas Em <?=dataBr($_SESSION['busca_data'])?></h4>
 
   <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px; margin-bottom:20px;">

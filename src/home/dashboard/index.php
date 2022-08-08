@@ -5,9 +5,6 @@
       $_SESSION['busca_data'] = $_POST['busca_data'];
     }
 
-
-    echo $query = "select * from alguma oisa where data = '{$_SESSION['busca_data']}'";
-
 ?>
 
 <style>
