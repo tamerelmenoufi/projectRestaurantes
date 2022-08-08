@@ -116,10 +116,10 @@
             <table class="table table-striped table-hover">
               <tbody>
                 <tr>
-                  <td scope="col">Nome</td>
-                  <td scope="col">CPF</td>
-                  <td scope="col">Local</td>
-                  <td scope="col">Data</td>
+                  <th scope="col">Nome</th>
+                  <th scope="col">CPF</th>
+                  <th scope="col">Local</th>
+                  <th scope="col">Data</th>
                 </tr>
               <?php
                   $query = "select * from clientes order by codigo desc";
@@ -151,10 +151,10 @@
             <table class="table table-striped table-hover">
             <tbody>
                 <tr>
-                  <td scope="col">CPF</td>
-                  <td scope="col">Restaurante</td>
-                  <td scope="col">Data</td>
-                  <td scope="col">Voto</td>
+                  <th scope="col">CPF</th>
+                  <th scope="col">Restaurante</th>
+                  <th scope="col">Data</th>
+                  <th scope="col">Voto</th>
                 </tr>
                 <?php
                   $query = "select a.*, concat(b.local,' - ',b.titulo) as restaurante from votos a left join restaurantes b on a.restaurante = b.codigo order by a.codigo desc";
