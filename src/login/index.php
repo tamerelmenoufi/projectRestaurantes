@@ -13,17 +13,17 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 
         if(mysqli_num_rows($result)){
             $d = mysqli_fetch_object($result);
-            $_SESSION['QrAtivosLogin'] = $d->codigo;
+            $_SESSION['ProjectRestaurantesLogin'] = $d;
             $retorno = [
                 'sucesso' => true,
-                'QrAtivosLogin' => $d->codigo,
+                'ProjectRestaurantesLogin' => $d->codigo,
                 'MaterConnectado' => $_POST['MaterConnectado'],
                 'msg' => 'Login Realizado com sucesso',
             ];
         }else{
             $retorno = [
                 'sucesso' => false,
-                'QrAtivosLogin' => false,
+                'ProjectRestaurantesLogin' => false,
                 'MaterConnectado' => false,
                 'msg' => 'Ocorreu um erro no seu login',
             ];
@@ -204,8 +204,8 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
                 success:function(dados){
                     // let retorno = JSON.parse(dados);
                     // $.alert(dados.sucesso);
-                    console.log(dados.QrAtivosLogin);
-                    if(dados.QrAtivosLogin > 0){
+                    console.log(dados.ProjectRestaurantesLogin);
+                    if(dados.ProjectRestaurantesLogin > 0){
                         window.location.href='./';
                     }else{
                         $.alert('Ocorreu um erro.<br>Favor confira os dados do login.')
