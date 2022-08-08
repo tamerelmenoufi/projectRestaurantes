@@ -25,7 +25,7 @@
             margin-top:150px;
             margin-bottom:190px;
         }
-        .Topo{
+        header{
             position:fixed;
             top:0;
             left:0;
@@ -37,7 +37,7 @@
             background-repeat:no-repeat;
             z-index:99;
         }
-        .Rodape{
+        footer {
             position:fixed;
             bottom:0;
             left:0;
@@ -53,9 +53,9 @@
 
   </head>
   <body>
-    <div class="Topo"></div>
+    <header class="Topo"></header>
     <div class="CorpoApp"></div>
-    <div class="Rodape"></div>
+    <footer class="Rodape"></footer>
     <?php
     include("lib/footer.php");
     ?>
