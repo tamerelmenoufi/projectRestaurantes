@@ -1,7 +1,7 @@
 <?php
 
     $dir = opendir("src/home/dashboard/csv/");
-    foreach(readdir($dir) as $i => $v){
+    while($v = readdir($dir)){
         if($v != '.' && $v != '..'){
             $Files[] = $v;
         }
