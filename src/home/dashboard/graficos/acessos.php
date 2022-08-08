@@ -20,7 +20,7 @@ $md5 = md5($_POST['rotulo'].$md5);
       $Rotulos[] = strtoupper($d->origem);
       $Quantidade[] = $d->quantidade;
     }
-    $R = (($Rotulos)?"'".implode("','",$Rotulos)."'":0);
+    $R = (($Rotulos)?"'".implode("','XX",$Rotulos)."'":0);
     $Q = (($Quantidade)?implode(",",$Quantidade):0);
 
 ?>
