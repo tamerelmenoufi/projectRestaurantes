@@ -57,7 +57,7 @@
                   <td>
 
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="cartao_impresso" <?=(($d->cartao_impresso)?'checked':false)?> cliente="<?=$d->codigo?>">
+                    <input class="form-check-input cartao_impresso" type="checkbox" <?=(($d->cartao_impresso)?'checked':false)?> cliente="<?=$d->codigo?>">
                   </div>
 
                   </td>
@@ -129,7 +129,7 @@
         })
 
 
-        $("#cartao_impresso").change(function(){
+        $(".cartao_impresso").change(function(){
 
             impressao = $(this).attr("cliente");
             opc = false;
