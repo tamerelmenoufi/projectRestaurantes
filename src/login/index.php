@@ -160,11 +160,11 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
                 <input type="password" class="form-control" id="senha" placeholder="Digite sua Senha" required>
                 <label for="senha">Senha</label>
             </div>
-            <div id="remember" class="checkbox mb-2 mt-2">
+            <!-- <div id="remember" class="checkbox mb-2 mt-2">
                 <label>
                     <input type="checkbox" value="remember-me"> Manter-me sempre conectado
                 </label>
-            </div>
+            </div> -->
             <button id="Acessar" class="btn btn-lg btn-primary btn-block btn-signinXX" type="submit">Entrar</button>
 
             <!-- <div class="form-signin">
@@ -178,9 +178,9 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
                 </div>
 
             </div> -->
-            <a href="#" class="forgot-password">
+            <!-- <a href="#" class="forgot-password">
                 Esqueceu a senha?
-            </a>
+            </a> -->
         </div><!-- /card-container -->
     </div><!-- /container -->
 </div>
