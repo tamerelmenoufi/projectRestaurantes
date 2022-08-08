@@ -73,9 +73,15 @@
                     >
                       Editar
                     </button>
+                    <?php
+                    if($d->codigo != 1){
+                    ?>
                     <button class="btn btn-danger" delete="<?=$d->codigo?>">
                       Excluir
                     </button>
+                    <?php
+                    }
+                    ?>
                   </td>
                 </tr>
                 <?php
