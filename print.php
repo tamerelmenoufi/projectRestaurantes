@@ -23,7 +23,7 @@
     <style>
         .CorpoApp{
             margin-top:150px;
-            margin-bottom:150px;
+            margin-bottom:190px;
         }
         .Topo{
             position:fixed;
@@ -41,7 +41,7 @@
             position:fixed;
             bottom:0;
             left:0;
-            width:100%;
+            width:150%;
             height:120px;
             background-image:url("img/rodape_gov.png");
             background-position:center center;
