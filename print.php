@@ -22,8 +22,9 @@
 
     <style>
         .CorpoApp{
-            margin-top:150px;
-            margin-bottom:190px;
+            position:absolute;
+            top:150px;
+            bottom:190px;
         }
         header{
             position:fixed;
