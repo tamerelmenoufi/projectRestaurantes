@@ -42,7 +42,7 @@
             bottom:0;
             left:0;
             width:100%;
-            height:150px;
+            height:170px;
             background-image:url("img/rodape_gov.png");
             background-position:center center;
             background-size:100% auto;
