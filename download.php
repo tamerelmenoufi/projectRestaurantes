@@ -6,6 +6,9 @@
             $Files[] = $v;
         }
     }
+    print_r($Files);
+    echo "<hr>";
+    print_r($_GET);
 
     if(in_array($_GET['f'],$Files)) {
         echo "TEM!";
