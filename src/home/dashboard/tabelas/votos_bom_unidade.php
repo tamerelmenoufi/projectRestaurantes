@@ -13,14 +13,12 @@ $md5 = md5($_POST['rotulo'].$md5);
 </style>
 <table class="table table-hover">
 
-    <thead>
+    <tbody>
         <tr>
             <th>Unidade</th>
             <th>Usuário</th>
             <th>Voto</th>
         </tr>
-    </thead>
-    <tbody>
 <?php
 
     $query = "
