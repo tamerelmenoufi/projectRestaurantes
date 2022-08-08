@@ -10,7 +10,7 @@ CPF;Restaurante;Data;Voto
         $result = mysqli_query($con, $query);
         while($d = mysqli_fetch_object($result)){
     ?>
-<?=$d->cliente?>;<?=$d->restaurante?>;<?=$d->data?>;<?=$d->voto?>
+<?=$d->cliente?>;<?=$d->restaurante?>;<?=$d->data?>;<?=$d->voto."\n"?>
 <?php
         }
 ?>

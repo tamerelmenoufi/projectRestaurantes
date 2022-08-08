@@ -23,7 +23,7 @@ Unidade;Usuário;Voto
     $Quantidade = [];
     while($d = mysqli_fetch_object($result)){
 ?>
-<?=$d->restaurante?>;<?=$d->usuario?>;Ruim
+<?=$d->restaurante?>;<?=$d->usuario?>;Ruim<?="\n"?>
 <?php
     }
 ?>

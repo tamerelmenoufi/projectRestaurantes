@@ -10,7 +10,7 @@ Nome;CPF;Local;Data
         $result = mysqli_query($con, $query);
         while($d = mysqli_fetch_object($result)){
     ?>
-<?=$d->nome?>;<?=$d->cpf?>;<?=$d->local?>;<?=dataBr($d->data)?>
+    <?=$d->nome?>;<?=$d->cpf?>;<?=$d->local?>;<?=dataBr($d->data)."\n"?>
     <?php
         }
     ?>
