@@ -38,7 +38,7 @@
             left:0;
             width:100%;
             height:60px;
-            background-image:url("img/topo_gov.png");
+            background-image:url("img/rodape_gov.png");
             background-position:center center;
             background-size:auto 100%;
             background-repeat:no-repeat;
