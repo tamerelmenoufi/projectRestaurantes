@@ -17,7 +17,7 @@ $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
               *,
               if(voto = 'excelente', 1, if(voto = 'bom', 2, 3)) as ordem,
               count(*) as qt
-        from votos group by voto order by ordem
+        from votos where data LIKE '$data%' group by voto order by ordem
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];

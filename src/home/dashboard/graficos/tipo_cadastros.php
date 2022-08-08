@@ -16,8 +16,8 @@ $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
 
     $query = "
     SELECT
-        (SELECT count(*) as app FROM `clientes` where local != '') as app,
-        (SELECT count(*) as app FROM `clientes` where local = '') as cartao
+        (SELECT count(*) as app FROM `clientes` where local != '' and data LIKE '$data%') as app,
+        (SELECT count(*) as app FROM `clientes` where local = '' and data LIKE '$data%') as cartao
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];

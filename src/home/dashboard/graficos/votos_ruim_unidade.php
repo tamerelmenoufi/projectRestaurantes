@@ -19,7 +19,7 @@ $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
             count(*) as qt
         from votos a
         left join restaurantes b on a.restaurante = b.codigo
-        where a.voto = 'Ruim'
+        where a.voto = 'Ruim' and a.data LIKE '$data%'
         group by a.restaurante
         order by qt desc
     ";

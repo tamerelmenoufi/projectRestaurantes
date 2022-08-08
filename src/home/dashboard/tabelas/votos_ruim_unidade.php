@@ -31,7 +31,7 @@ $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
         from votos a
         left join restaurantes b on a.restaurante = b.codigo
         left join clientes c on a.cliente = c.cpf
-        where a.voto = 'Ruim'
+        where a.voto = 'Ruim' and a.data LIKE '$data%'
         order by restaurante, usuario desc
     ";
     $result = mysqli_query($con, $query);
