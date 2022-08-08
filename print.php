@@ -21,27 +21,33 @@
     ?>
 
     <style>
+        .CorpoApp{
+            margin-top:150px;
+            margin-bottom:150px;
+        }
         .Topo{
             position:fixed;
             top:0;
             left:0;
             width:100%;
-            height:100px;
+            height:120px;
             background-image:url("img/topo_gov.png");
             background-position:center center;
             background-size:auto 100%;
             background-repeat:no-repeat;
+            z-index:99;
         }
         .Rodape{
             position:fixed;
             bottom:0;
             left:0;
             width:100%;
-            height:60px;
+            height:120px;
             background-image:url("img/rodape_gov.png");
             background-position:center center;
             background-size:100% auto;
             background-repeat:no-repeat;
+            z-index:99;
         }
     </style>
 
