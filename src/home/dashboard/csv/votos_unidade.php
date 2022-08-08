@@ -2,9 +2,7 @@
 include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 $md5 = md5($_POST['rotulo'].$md5);
 $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
-?>
-Unidade;Usuário;Voto
-<?php
+?>Unidade;Usuário;Voto<?="\n"?><?php
 
     $query = "
         select
@@ -21,8 +19,6 @@ Unidade;Usuário;Voto
     $Rotulos = [];
     $Quantidade = [];
     while($d = mysqli_fetch_object($result)){
-?>
-<?=$d->restaurante?>;<?=$d->usuario?>;<?=$d->voto."\n"?>
-<?php
+?><?=$d->restaurante?>;<?=$d->usuario?>;<?=$d->voto."\n"?><?php
     }
 ?>
