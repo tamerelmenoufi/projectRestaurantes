@@ -26,9 +26,9 @@
             margin-bottom:190px;
         }
         header{
-            position:fixed;
-            top:0;
-            left:0;
+            position:relative;
+            /* top:0;
+            left:0; */
             width:100%;
             height:120px;
             margin-bottom:150px;
@@ -39,9 +39,9 @@
             z-index:99;
         }
         footer {
-            position:fixed;
-            bottom:0;
-            left:0;
+            position:relative;
+            /* bottom:0;
+            left:0; */
             width:100%;
             height:170px;
             margin-top:150px;
