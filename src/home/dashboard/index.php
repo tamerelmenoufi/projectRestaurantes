@@ -141,33 +141,7 @@
         <div class="card">
           <h5 class="card-header">Clientes Cadastrados</h5>
           <div class="card-body">
-
-            <table class="table table-striped table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Nome</th>
-                  <th scope="col">CPF</th>
-                  <th scope="col">Local</th>
-                  <th scope="col">Data</th>
-                </tr>
-              </thead>
-              <tbody>
-              <?php
-                  $query = "select * from clientes where data LIKE '$data%' order by codigo desc";
-                  $result = mysqli_query($con, $query);
-                  while($d = mysqli_fetch_object($result)){
-                ?>
-                <tr>
-                  <td><?=$d->nome?></td>
-                  <td><?=$d->cpf?></td>
-                  <td><?=$d->local?></td>
-                  <td><?=dataBr($d->data)?></td>
-                </tr>
-                <?php
-                  }
-                ?>
-              </tbody>
-            </table>
+            <div tabela="clientes_cadastrados"></div>
           </div>
         </div>
       </div>
@@ -178,37 +152,7 @@
         <div class="card">
           <h5 class="card-header">Pesquisa de Satisfação</h5>
           <div class="card-body">
-
-            <table class="table table-striped table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">CPF</th>
-                  <th scope="col">Restaurante</th>
-                  <th scope="col">Data</th>
-                  <th scope="col">Voto</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php
-                  $query = "select a.*, concat(b.local,' - ',b.titulo) as restaurante from votos a left join restaurantes b on a.restaurante = b.codigo where a.data LIKE '$data%' order by a.codigo desc";
-                  $result = mysqli_query($con, $query);
-                  while($d = mysqli_fetch_object($result)){
-                ?>
-                <tr>
-                  <td><?=$d->cliente?></td>
-                  <td><?=$d->restaurante?></td>
-                  <td><?=$d->data?></td>
-                  <td>
-                    <i class="fa-regular fa-face-frown" style="color:<?=(($d->voto == 'Ruim')?'red':'#ccc')?>"></i>
-                    <i class="fa-regular fa-face-meh" style="color:<?=(($d->voto == 'Bom')?'orange':'#ccc')?>"></i>
-                    <i class="fa-regular fa-face-smile" style="color:<?=(($d->voto == 'Excelente')?'green':'#ccc')?>"></i>
-                  </td>
-                </tr>
-                <?php
-                  }
-                ?>
-              </tbody>
-            </table>
+            <div tabela="pesquisa_satisfacao"></div>
           </div>
         </div>
       </div>
