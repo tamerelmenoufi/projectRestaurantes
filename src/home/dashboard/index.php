@@ -67,6 +67,14 @@
     </div>
 
 
+    <div class="row">
+      <div class="col">
+        <div style="width:100%; text-align:right">
+          Baixar planilha em formato CSV - Votação da pesquisa <a href="./download.php?f=votos_unidade" class="btn btn-warning">Baixar</a>
+        </div>
+      </div>
+    </div>
+
     <!-- Pesquisa de satisfação Gráficos -->
     <div class="row" style="margin-top:20px; margin-bottom:20px;">
       <div class="col-md-6">
@@ -133,11 +141,6 @@
       </div>
     </div>
 
-
-    <div style="width:100%; text-align:right">
-      Baixar planilha em formato CSV - Votação da pesquisa <a href="?download.php?f=votos_unidade" class="btn btn-warning">Baixar</a>
-    </div>
-
     <div class="row">
       <div class="col">
         <div class="card">
@@ -159,9 +162,6 @@
         </div>
       </div>
     </div>
-
-
-
 
 
   </div>

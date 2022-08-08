@@ -5,7 +5,7 @@ $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
 
 ?>
 <div style="width:100%; text-align:right">
-    Baixar planilha em formato CSV - Pesquisa de satisfacao <a href="?download.php?f=pesquisa_satisfacao" class="btn btn-warning">Baixar</a>
+    Baixar planilha em formato CSV - Pesquisa de satisfacao <a href="./download.php?f=pesquisa_satisfacao" class="btn btn-warning">Baixar</a>
 </div>
 <table class="table table-striped table-hover">
     <thead>
