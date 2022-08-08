@@ -193,10 +193,6 @@
       </div>
     </div>
 
-
-
-
-
   </div>
 </div>
 
@@ -237,7 +233,7 @@
 
     const Tabelas = (r) => {
         $.ajax({
-          url:`src/home/dashboard/tabelas/${r.local}.php`,
+          url:`src/home/dashboard/tabelas/${r.local}.php?print=1`,
           type:"POST",
           data:{
             rotulo:r.rotulo,

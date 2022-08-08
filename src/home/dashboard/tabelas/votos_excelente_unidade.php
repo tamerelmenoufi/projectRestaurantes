@@ -51,7 +51,9 @@ $md5 = md5($_POST['rotulo'].$md5);
 ?>
     </tbody>
 </table>
-
+<?php
+    if($_GET['print']) exit;
+?>
 <script>
     $(function(){
 
