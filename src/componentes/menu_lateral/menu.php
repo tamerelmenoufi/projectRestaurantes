@@ -36,7 +36,7 @@
     <div class="row mb-1">
       <div class="col">
         <a url="src/app/index.php" href="#" class="text-decoration-none" data-bs-dismiss="offcanvas" aria-label="Close">
-          <i class="fa-solid fa-rectangle-list"></i> Baixar Aplicativo - Proto Cheio
+         <i class="fa-solid fa-mobile-screen-button"></i> Baixar Aplicativo - Proto Cheio
         </a>
       </div>
     </div>
