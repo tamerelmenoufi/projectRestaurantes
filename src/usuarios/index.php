@@ -135,9 +135,9 @@
             opc = false;
 
             if($(this).prop("checked") == true){
-              opc = 1;
+              opc = '1';
             }else{
-              opc = 1;
+              opc = '0';
             }
 
 
