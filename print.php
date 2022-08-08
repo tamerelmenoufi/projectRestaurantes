@@ -67,7 +67,7 @@
                 url:"<?=$url?>",
                 success:function(dados){
                     $(".CorpoApp").html(dados);
-                    $(documento).print();
+                    $(window).print();
                 }
             });
         })
