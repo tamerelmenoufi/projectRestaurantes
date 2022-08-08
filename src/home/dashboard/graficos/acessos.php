@@ -17,8 +17,8 @@ $md5 = md5($_POST['rotulo'].$md5);
     $Rotulos = [];
     $Quantidade = [];
     while($d = mysqli_fetch_object($result)){
-      $Rotulos[] = strtoupper($d->origem);
-      $Quantidade[] = $d->quantidade;
+      $Rotulos[$d->origem] =+ strtoupper($d->origem);
+      $Quantidade[$d->origem] =+ $d->quantidade;
     }
     $R = (($Rotulos)?"'".implode("','XX",$Rotulos)."'":0);
     $Q = (($Quantidade)?implode(",",$Quantidade):0);
