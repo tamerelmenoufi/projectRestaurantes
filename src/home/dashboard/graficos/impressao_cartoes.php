@@ -1,6 +1,9 @@
 <?php
 include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 $md5 = md5($_POST['rotulo'].$md5);
+
+$data = (($_SESSION['busca_data'])?:date("Y-m-d"));
+
 ?>
 
 <canvas id="Tipos<?= $md5 ?>" width="400" height="400"></canvas>
@@ -12,8 +15,8 @@ $md5 = md5($_POST['rotulo'].$md5);
 
     $query = "
     SELECT
-        (SELECT count(*) FROM `clientes` where cartao_impresso != '1') as nao,
-        (SELECT count(*) FROM `clientes` where cartao_impresso = '1') as sim
+        (SELECT count(*) FROM `clientes` where cartao_impresso != '1' and data LIKE '$data%') as nao,
+        (SELECT count(*) FROM `clientes` where cartao_impresso = '1' and data LIKE '$data%') as sim
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];

@@ -1,6 +1,8 @@
 <?php
 include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 $md5 = md5($_POST['rotulo'].$md5);
+$data = (($_SESSION['busca_data'])?:date("Y-m-d"));
+
 ?>
 
 <canvas id="Tipos<?= $md5 ?>" width="400" height="400"></canvas>

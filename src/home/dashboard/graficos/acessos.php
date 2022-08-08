@@ -1,6 +1,9 @@
 <?php
 include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
 $md5 = md5($_POST['rotulo'].$md5);
+
+$data = (($_SESSION['busca_data'])?:date("Y-m-d"));
+
 ?>
 
 <canvas id="Tipos<?= $md5 ?>" width="400" height="400"></canvas>
@@ -11,7 +14,7 @@ $md5 = md5($_POST['rotulo'].$md5);
 <?php
 
     $query = "
-        SELECT if(origem != '',origem,'qrcode') as origem, count(*) as quantidade FROM `clientes_logs` group by origem;
+        SELECT if(origem != '',origem,'qrcode') as origem, count(*) as quantidade FROM `clientes_logs` where data LIKE '$data%' group by origem;
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];
