@@ -23,7 +23,7 @@ $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
     <tr>
         <td><?=$d->cliente?></td>
         <td><?=$d->restaurante?></td>
-        <td><?=$d->data?></td>
+        <td><?=dataBr($d->data)?></td>
         <td>
         <i class="fa-regular fa-face-frown" style="color:<?=(($d->voto == 'Ruim')?'red':'#ccc')?>"></i>
         <i class="fa-regular fa-face-meh" style="color:<?=(($d->voto == 'Bom')?'orange':'#ccc')?>"></i>
