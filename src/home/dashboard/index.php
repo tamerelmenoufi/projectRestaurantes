@@ -146,6 +146,9 @@
         <div class="card">
           <h5 class="card-header">Clientes Cadastrados</h5>
           <div class="card-body">
+            <div style="width:100%; text-align:right">
+              Baixar planilha em formato CSV - Cadastro de Usuários <a href="./download.php?f=clientes_cadastrados" target="clientes_cadastrados" class="btn btn-warning">Baixar</a>
+            </div>
             <div tabela="clientes_cadastrados"></div>
           </div>
         </div>
@@ -157,6 +160,9 @@
         <div class="card">
           <h5 class="card-header">Pesquisa de Satisfação</h5>
           <div class="card-body">
+            <div style="width:100%; text-align:right">
+                Baixar planilha em formato CSV - Pesquisa de satisfacao <a href="./download.php?f=pesquisa_satisfacao" target="pesquisa_satisfacao" class="btn btn-warning">Baixar</a>
+            </div>
             <div tabela="pesquisa_satisfacao"></div>
           </div>
         </div>
