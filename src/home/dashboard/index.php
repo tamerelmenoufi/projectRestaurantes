@@ -38,7 +38,7 @@
         <div class="card">
           <h5 class="card-header">Impressão de Cartões</h5>
           <div class="card-body">
-            <div grafico="imopressao_cartoes"></div>
+            <div grafico="impressao_cartoes"></div>
           </div>
         </div>
       </div>

@@ -12,8 +12,8 @@ $md5 = md5($_POST['rotulo'].$md5);
 
     $query = "
     SELECT
-        (SELECT count(*) as app FROM `clientes` where cartao_impresso != '1') as nao,
-        (SELECT count(*) as app FROM `clientes` where cartao_impresso = '1') as sim
+        (SELECT count(*) FROM `clientes` where cartao_impresso != '1') as nao,
+        (SELECT count(*) FROM `clientes` where cartao_impresso = '1') as sim
     ";
     $result = mysqli_query($con, $query);
     $Rotulos = [];
