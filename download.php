@@ -9,9 +9,7 @@
     if(in_array($file,$Files)) {
         session_start();
         header('Content-Type: application/csv');
-        header('Content-Disposition: attachment; '.$_GET['f'].'-'.$_SESSION['busca_data'].'.csv');
+        header('Content-Disposition: attachment; filename="'.$_GET['f'].'-'.$_SESSION['busca_data'].'.csv"');
         header('Pragma: no-cache');
-
-
         include("src/home/dashboard/csv/{$file}");
     }
