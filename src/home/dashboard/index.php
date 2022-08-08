@@ -1,5 +1,10 @@
 <?php
     include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
+
+    if($_POST['busca_data']){
+      $_SESSION['busca_data'] = $_POST['busca_data'];
+    }
+
 ?>
 
 <style>
@@ -14,7 +19,7 @@
 
   <div class="row" style="margin-top:20px; margin-bottom:20px;">
     <div class="col-3">
-      <input type="date" class="form-control" alterar_data />
+      <input type="date" class="form-control" alterar_data value="<?=$_SESSION['busca_data']?>" />
     </div>
     <div class="col-8">Selecione a data para redefinir o relatório</div>
     <div class="col-1">
@@ -276,8 +281,13 @@
 
     $("input[alterar_data]").change(function(){
       Carregando();
+      busca_data = $(this).val();
       $.ajax({
         url:"src/home/dashboard/index.php",
+        type:"POST",
+        data:{
+          busca_data
+        },
         success:function(dados){
           $("#paginaHome").html(dados);
         }
