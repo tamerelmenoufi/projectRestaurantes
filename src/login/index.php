@@ -8,7 +8,7 @@ include("{$_SERVER['DOCUMENT_ROOT']}/app/projectRestaurantes/lib/includes.php");
         // $login = 'tamer';
         // $senha = md5('Mf6t1y76');
 
-        $query = "select * from usuarios where login = '{$login}' and senha = '{$senha}'";
+        $query = "select * from usuarios where login = '{$login}' and senha = '{$senha}' and situacao = '1'";
         $result = mysqli_query($con, $query);
 
         if(mysqli_num_rows($result)){
