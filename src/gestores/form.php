@@ -14,8 +14,8 @@
         foreach ($data as $name => $value) {
             $attr[] = "{$name} = '" . mysqli_real_escape_string($con, $value) . "'";
         }
-        if($data['senha']){
-            $attr[] = "senha = '" . md5($data['senha']) . "'";
+        if($_POST['senha']){
+            $attr[] = "senha = '" . md5($_POST['senha']) . "'";
         }
 
         $attr = implode(', ', $attr);
