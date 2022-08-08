@@ -4,23 +4,7 @@ $md5 = md5($_POST['rotulo'].$md5);
 $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
 
 ?>
-<style>
-    .ruim{
-        color:rgb(255, 99, 132, 0.2);
-        border:solid 1px rgb(255, 99, 132, 1);
-        border-radius:100%;
-        font-size:30px;
-        font-weight:bold;
-    }
-</style>
-<table class="table table-hover">
-
-    <tbody>
-        <tr>
-            <th>Unidade</th>
-            <th>Usuário</th>
-            <th>Voto</th>
-        </tr>
+Unidade;Usuário;Voto
 <?php
 
     $query = "
@@ -39,26 +23,7 @@ $data = (($_SESSION['busca_data'])?:date("Y-m-d"));
     $Quantidade = [];
     while($d = mysqli_fetch_object($result)){
 ?>
-        <tr>
-            <td><?=$d->restaurante?></td>
-            <td><?=$d->usuario?></td>
-            <td>
-                <i class="fa-regular fa-face-frown ruim"></i>
-            </td>
-        </tr>
+<?=$d->restaurante?>;<?=$d->usuario?>Ruim
 <?php
     }
 ?>
-    </tbody>
-</table>
-<?php
-    if($_GET['print']) exit;
-?>
-<script>
-    $(function(){
-
-        const H = $('div[grafico="<?=$_POST['local']?>"]').height();
-        $('div[tabela="<?=$_POST['local']?>"]').height(H);
-
-    })
-</script>
