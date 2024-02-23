@@ -7,9 +7,9 @@
 
             <p>Para baixar o aplicativo, copie o linque abaixo e cole em qualquer navehgador do seu celular. Ou baixe utilizando o botão abaixo:</p>
             <p style="color:blue">
-                http://project.mohatron.com/projectRestaurantes/PratoCheio.apk
+                https://pratocheio.p2.log.br/PratoCheio.apk
             </p>
-            <a href="http://project.mohatron.com/projectRestaurantes/PratoCheio.apk" target="_blank" class="btn btn-primary">
+            <a href="https://pratocheio.p2.log.br/PratoCheio.apk" target="_blank" class="btn btn-primary">
                 Baixar o App
             </a>
         </div>
